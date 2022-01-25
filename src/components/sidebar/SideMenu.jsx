@@ -3,7 +3,7 @@ import React, { useEffect, useState, useRef } from "react";
 // import logo from "../assets/logo/webscript.png";
 // import user from "../assets/user.jpg";
 import logo from "../../logo.svg";
-import { baseUrl } from "../../Routes";
+
 import "./sidebar.scss";
 
 import * as Fa from "react-icons/fa";
@@ -142,7 +142,7 @@ const SideMenu = (props) => {
           ))} */}
 
           <li>
-            <Link className="menu-item" to={baseUrl}>
+            <Link className="menu-item" to="/">
               <div className="menu-icon">
                 <Fa.FaHome />
               </div>
@@ -150,7 +150,7 @@ const SideMenu = (props) => {
             </Link>
           </li>
           <li>
-            <Link to={"/about"} className={`menu-item`}>
+            <Link to={"/webacrchitect/about"} className={`menu-item`}>
               <div className="menu-icon">
                 <Hi.HiUserGroup />
               </div>
@@ -158,7 +158,7 @@ const SideMenu = (props) => {
             </Link>
             <ul className={`sub-menu`}>
               <li key={"index"}>
-                <NavLink to={"/about/company"}>
+                <NavLink to={"/webacrchitect/about/company"}>
                   <Io.IoMdBusiness />
                   {"Company"}
                 </NavLink>
@@ -170,7 +170,7 @@ const SideMenu = (props) => {
             </ul>
           </li>
           <li>
-            <Link to={"/project"} className={`menu-item`}>
+            <Link to={"/webacrchitect/project"} className={`menu-item`}>
               <div className="menu-icon">
                 <Bi.BiBuildingHouse />
               </div>
@@ -178,22 +178,22 @@ const SideMenu = (props) => {
             </Link>
             <ul className={`sub-menu`}>
               <li key={"index"}>
-                <NavLink to={"/p/" + categories[0]}>
+                <NavLink to={"/webacrchitect/p/" + categories[0]}>
                   <Md.MdHouse />
                   {"Rumah"}
                 </NavLink>
-                <NavLink to={"/p/" + categories[1]}>
+                <NavLink to={"/webacrchitect/p/" + categories[1]}>
                   <Gi.GiShop />
                   {"Ruko"}
                 </NavLink>
-                <NavLink to={"/p/" + categories[2]}>
+                <NavLink to={"/webacrchitect/p/" + categories[2]}>
                   <Md.MdOutlineLocalConvenienceStore />
                   {"Kios"}
                 </NavLink>
               </li>
             </ul>
           </li>
-          <Link className="menu-item" to="/contact">
+          <Link className="menu-item" to="/webacrchitect/contact">
             <div className="menu-icon">
               <Md.MdOutlineContactMail />
             </div>

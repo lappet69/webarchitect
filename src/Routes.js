@@ -26,15 +26,15 @@ const Routes = (Components, pageProps) => {
           <LandingPage />
         </Route>
         <Route path={"/client"}>Client</Route>
-        <Route path={baseUrl.toString() + "/about"} component={About} />
-        <Route path={baseUrl.toString() + "/project"} component={Project} />
-        <Route path={baseUrl.toString() + "/contact"} component={Contact} />
+        <Route path={"/webacrchitect/about"} component={About} />
+        <Route path={"/webacrchitect/project"} component={Project} />
+        <Route path={"/webacrchitect/contact"} component={Contact} />
         <Route
-          path={baseUrl.toString() + "/detail/project/:id"}
+          path={"/webacrchitect/detail/project/:id"}
           component={DetailProject}
         />
         <Route
-          path={baseUrl.toString() + "/p/:category"}
+          path={"/webacrchitect/p/:category"}
           component={Category}
         />
         {/* <Route path="/category/:category" component={Category} /> */}
