@@ -1,0 +1,90 @@
+@use "../../scss/" as *;
+
+// .thumbnail-grid{
+//    // color & background
+//    background-color: #fff;
+//    background-position: 0% 0%;
+//    color: $main-color;
+//    // ========== //
+ 
+//    // box
+//   //  width: 5093px;
+//   //  height: 1082px;
+//   //  min-height: auto;
+//   //  min-width: auto;
+ 
+   
+ 
+//    // list
+//    list-style-type: none;
+//    list-style-position: outside;
+ 
+//    // effect
+//    transform:none;
+//    transition: all 0s ease 0s;
+
+// }
+
+.thumbnail-container {
+
+  // box
+  width: 336px;
+  height: 252px;
+  min-height: auto;
+  min-width: auto;
+
+  // positioning
+  // position: absolute;
+  display: list-item;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+
+  // list
+  list-style-type: none;
+  list-style-position: outside;
+
+  // effect
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: all 0s ease 0s;
+
+  a {
+    // positioning
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+
+   // effect
+   transform: none;
+   transition: color 0.2s ease 0s;
+}
+
+// .bg {
+//   width: 100%;
+
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   border-top-left-radius: 10px 10px;
+//   border-top-right-radius: 10px 10px;
+// }
+.swiper-slide {
+  height: max-content;
+  // padding-right: 5px;
+  // border-radius: 10px;
+  // background: #eaeaea;
+}
+
+.item-name {
+  font-weight: bold;
+}
+
+.discount-wrapper > p {
+  background: #eaeaea;
+  display: flex;
+  // flex-wrap: wrap;
+}

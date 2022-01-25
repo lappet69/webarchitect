@@ -1,0 +1,130 @@
+@use "./scss" as *;
+@use "../node_modules/bootstrap/scss/bootstrap" as *;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+main {
+  @media only screen and (max-width: 40em) {
+    z-index: 2;
+  }
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+h1,h2,h3,h4{
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 100%;
+
+  @include tablet {
+    // font-size: 80%;
+  }
+  @include mobile-potrait {
+    // font-size: 70%;
+  }
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  background: #fff;
+  // background-image: url("./components/assets/bg-img.jpg");
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #0d0c22;
+
+  @include mobile-potrait {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+p{
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: #072227;
+  }
+}
+
+button,
+input {
+  outline: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+.container-fluid {
+  padding-left: 0 !important ;
+  padding-right: 0 !important ;
+
+  @include mobile-potrait {
+    width: 100%;
+  }
+}
+.box-container {
+  margin: auto;
+  // width: 80%;
+  background-color: #fff;
+  height: 100vh;
+  @include mobile-potrait {
+    width: 100%;
+  }
+}
+main {
+  height: 100vh;
+}
+
+.section {
+  padding: 0 2rem;
+}
+
+.section__header {
+  @include flex(center, space-between);
+}

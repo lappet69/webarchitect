@@ -1,0 +1,44 @@
+@use "../scss/" as *;
+
+.navbar {
+  
+  display: flex;
+  text-decoration: none solid;
+  word-spacing: 0px;
+  line-height: 28px;
+  
+  background-color: #ffffff;
+  background-position: 0% 0%;
+  color: #0d0c22;
+  
+  width: auto;
+  height: 60px;
+  margin: 0 24px;
+  box-sizing: border-box;
+  transform: none;
+  transition: all 0s ease 0s;
+  ul {
+    display: flex;
+
+    li {
+      padding: 1em;
+      :hover {
+        text-decoration: underline;
+        transition: 0.5s;
+        padding: 1em;
+      }
+    }
+  }
+  @include mobile-potrait{
+    position: fixed;
+    z-index: 3;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 50px;
+    border: solid 1px;
+  }
+}

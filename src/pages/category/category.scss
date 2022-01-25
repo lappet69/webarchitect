@@ -1,0 +1,68 @@
+@use "../../scss/" as *;
+
+.filter-category {
+  display: flex;
+  background: #fff;
+  margin-top: -10px;
+  padding: 1rem;
+  p {
+    margin-right: 2em;
+  }
+}
+
+.col-md-6 img {
+  height: 100vh;
+  @include mobile-potrait{
+    height: auto;
+  }
+}
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  row-gap: 15px;
+  background-color: #fff;
+  padding: 1rem;
+  @include mobile-potrait {
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+  }
+}
+.btn-close {
+  // color:#fff;
+  background-color: #fff;
+}
+
+.text-category {
+  padding: 1em 1em 1em 1em !important;
+  text-transform: capitalize;
+  // border-bottom: solid 3px;
+  // display: inline-block;
+}
+.accordion {
+  .accordion-item {
+    border: 0;
+  }
+}
+.dd-list-item {
+  // padding: 1em;
+  list-style: none;
+  text-transform: capitalize;
+  animation-duration: 1.5s;
+  animation-name: fadein;
+  box-sizing: border-box;
+  :hover {
+    // border-radius: 3px;
+    font-weight: bold;
+    border-bottom: solid 3px #e9b61a;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

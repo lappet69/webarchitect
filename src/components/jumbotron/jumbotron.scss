@@ -1,0 +1,48 @@
+@use "../../scss/" as *;
+
+.row.jumbotron {
+  position: relative;
+
+  --bs-gutter-x: 0;
+  height: 100vh;
+  animation-duration: 2s;
+  animation-name: fadein;
+  padding-left: 0 !important;
+  @include mobile-potrait {
+    .carousel-control-next {
+      display: none;
+    }
+    .carousel-control-prev {
+      display: none;
+    }
+    z-index: 1 !important;
+  }
+}
+.col-md {
+  z-index: 1;
+}
+
+.carousel-inner {
+  @media only screen and(max-width:40em) {
+    img {
+      position: relative;
+      z-index: 1 !important;
+    }
+  }
+}
+
+.carousel-inner {
+  img {
+    height: 100vh;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

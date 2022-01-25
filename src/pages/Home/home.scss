@@ -1,0 +1,49 @@
+@use "../../scss/" as *;
+
+.container {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.category {
+  display: flex;
+  padding: 0px 10px;
+  flex-direction: column;
+}
+
+.category-link {
+  border-bottom: solid 5px #2a263b;
+  display: block;
+  padding: 0.3em;
+  z-index: 1;
+  margin-bottom: 20px;
+  color: #072227;
+}
+hr {
+  position: relative;
+  top: -25px;
+  left: calc(0);
+  border: none;
+  background: #f9d12b;
+  width: 13%;
+  height: 5px;
+}
+
+#wrapper-inner {
+  background: #fff;
+  background-position: 0% 0%;
+
+  padding: 3rem 3rem;
+
+  display: block;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+
+  transform: none;
+  transition: all 0s ease 0s;
+  box-sizing: border-box;
+}

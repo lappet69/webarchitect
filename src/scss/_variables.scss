@@ -1,0 +1,37 @@
+$body-bg: #fff;
+$main-color: #072227;
+$txt-color: #0D0C22;
+$open-drawer:true;
+
+$white: #fff;
+$black: #000;
+
+$box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+$header-height: 8rem;
+$header-shrink-height: 5rem;
+$border-radius: 30px;
+
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+$mobile-potrait: 768px;
+
+/* smartphones, Android phones, landscape iPhone */
+$mobile-landscape: 480px;
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+$tablet-potrait: 600px;
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+$tablet-landscape: 801px;
+
+/* big landscape tablets, laptops, and desktops */
+$desktop: 1025px;
+
+/* hi-res laptops and desktops */
+$desktop-hi-res: 1281px;
+
+$mobile-width: 600px;
+$tablet-width: 1024px;
+
+// $font-family: 'Share Tech Mono', monospace;
+$font-family: 'Roboto', sans-serif;

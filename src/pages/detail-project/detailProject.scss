@@ -1,0 +1,157 @@
+@use "../../scss/" as *;
+
+.project-content {
+  background: #f9f8fd;
+  background-position: 0% 0%;
+  // padding: 0.5em 1em !important;
+  display: block;
+  transform: none;
+  box-sizing: border-box;
+  height: 100vh;
+  max-height: auto;
+
+  animation-name: fadein;
+  animation-duration: 2s;
+  @include mobile-potrait {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+  }
+}
+
+.project-content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  box-sizing: border-box;
+  @include mobile-potrait {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.project-img {
+  cursor: zoom-in;
+  // height: 100vh;
+  // width: 100%;
+  img {
+    border-radius: 3px;
+
+    @include mobile-potrait {
+      border-radius: 3px;
+      .swiper-slide.active {
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+}
+.img-thumbnail {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 0.5em;
+  box-sizing: border-box;
+  img {
+    border-radius: 5px;
+  }
+  @include mobile-potrait {
+    // width: 100%;
+  }
+}
+
+.project-info-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2em;
+  @include mobile-potrait {
+    border-radius: 5px;
+    padding: 10px 0;
+    width: 100%;
+  }
+}
+.project-info {
+  display: flex;
+  border-bottom: solid 0.5px #a4a6a9;
+  border-top: solid 0.5px #a4a6a9;
+
+  button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 10px 24px 0px 0px;
+    color: #a4a6a9;
+    height: 39px;
+    line-height: 20px;
+  }
+  button.active {
+    color: #000;
+    font-weight: bold;
+    border-bottom: solid 2px #f9d12b;
+    position: relative;
+    top: 1px;
+  }
+  a:hover {
+    color: #000;
+  }
+  @include mobile-potrait {
+    display: flex;
+    height: auto;
+    line-height: auto;
+    a {
+      padding: 0.5em;
+    }
+  }
+}
+.project-detail {
+  padding: 20px 0;
+  // transform: rotate(29);
+  text-align: justify;
+
+  @include mobile-potrait {
+    padding-right: 24px;
+    text-align: justify;
+  }
+
+  .naration-fadein {
+    animation-duration: 1.5s;
+    animation-name: fadein;
+  }
+  .info-fadein {
+    animation-duration: 1.5s;
+    animation-name: infofadein;
+  }
+}
+.none {
+  display: none;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes infofadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes content-fade {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
