@@ -142,7 +142,7 @@ const SideMenu = (props) => {
           ))} */}
 
           <li>
-            <Link className="menu-item" to="/">
+            <Link className="menu-item" to="/webarchitect">
               <div className="menu-icon">
                 <Fa.FaHome />
               </div>

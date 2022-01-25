@@ -14,7 +14,7 @@ const ProjectCard = (props) => {
       {items.map((el) => {
         return (
           <div className="col-md-6" key={el.id}>
-            <Link to={"/detail/project/" + el.id}>
+            <Link to={"/webarchitect/detail/project/" + el.id}>
               <img
                 src={typeof el.url == "object" ? el.url[0] : el.url}
                 className="img-thumbnail"
