@@ -26,15 +26,15 @@ const Routes = (Components, pageProps) => {
           <LandingPage />
         </Route>
         <Route path={"/client"}>Client</Route>
-        <Route path={"/webacrchitect/about"} component={About} />
-        <Route path={"/webacrchitect/project"} component={Project} />
-        <Route path={"/webacrchitect/contact"} component={Contact} />
+        <Route path={"/webarchitect/about"} component={About} />
+        <Route path={"/webarchitect/project"} component={Project} />
+        <Route path={"/webarchitect/contact"} component={Contact} />
         <Route
-          path={"/webacrchitect/detail/project/:id"}
+          path={"/webarchitect/detail/project/:id"}
           component={DetailProject}
         />
         <Route
-          path={"/webacrchitect/p/:category"}
+          path={"/webarchitect/p/:category"}
           component={Category}
         />
         {/* <Route path="/category/:category" component={Category} /> */}

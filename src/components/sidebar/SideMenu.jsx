@@ -150,7 +150,7 @@ const SideMenu = (props) => {
             </Link>
           </li>
           <li>
-            <Link to={"/webacrchitect/about"} className={`menu-item`}>
+            <Link to={"/webarchitect/about"} className={`menu-item`}>
               <div className="menu-icon">
                 <Hi.HiUserGroup />
               </div>
@@ -158,11 +158,11 @@ const SideMenu = (props) => {
             </Link>
             <ul className={`sub-menu`}>
               <li key={"index"}>
-                <NavLink to={"/webacrchitect/about/company"}>
+                <NavLink to={"/webarchitect/about/company"}>
                   <Io.IoMdBusiness />
                   {"Company"}
                 </NavLink>
-                <NavLink to={"/webacrchitect/about/team"}>
+                <NavLink to={"/webarchitect/about/team"}>
                   <Fa.FaPeopleCarry />
                   {"Team"}
                 </NavLink>
@@ -170,7 +170,7 @@ const SideMenu = (props) => {
             </ul>
           </li>
           <li>
-            <Link to={"/webacrchitect/project"} className={`menu-item`}>
+            <Link to={"/webarchitect/project"} className={`menu-item`}>
               <div className="menu-icon">
                 <Bi.BiBuildingHouse />
               </div>
@@ -178,22 +178,22 @@ const SideMenu = (props) => {
             </Link>
             <ul className={`sub-menu`}>
               <li key={"index"}>
-                <NavLink to={"/webacrchitect/p/" + categories[0]}>
+                <NavLink to={"/webarchitect/p/" + categories[0]}>
                   <Md.MdHouse />
                   {"Rumah"}
                 </NavLink>
-                <NavLink to={"/webacrchitect/p/" + categories[1]}>
+                <NavLink to={"/webarchitect/p/" + categories[1]}>
                   <Gi.GiShop />
                   {"Ruko"}
                 </NavLink>
-                <NavLink to={"/webacrchitect/p/" + categories[2]}>
+                <NavLink to={"/webarchitect/p/" + categories[2]}>
                   <Md.MdOutlineLocalConvenienceStore />
                   {"Kios"}
                 </NavLink>
               </li>
             </ul>
           </li>
-          <Link className="menu-item" to="/webacrchitect/contact">
+          <Link className="menu-item" to="/webarchitect/contact">
             <div className="menu-icon">
               <Md.MdOutlineContactMail />
             </div>
