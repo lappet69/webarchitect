@@ -22,7 +22,7 @@ const Routes = (Components, pageProps) => {
         }}
       />
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/webarchitect">
           <LandingPage />
         </Route>
         <Route path={"/client"}>Client</Route>

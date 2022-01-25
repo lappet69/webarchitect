@@ -162,7 +162,7 @@ const SideMenu = (props) => {
                   <Io.IoMdBusiness />
                   {"Company"}
                 </NavLink>
-                <NavLink to={"/about/team"}>
+                <NavLink to={"/webacrchitect/about/team"}>
                   <Fa.FaPeopleCarry />
                   {"Team"}
                 </NavLink>
