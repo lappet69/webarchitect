@@ -3,6 +3,7 @@ import React, { useEffect, useState, useRef } from "react";
 // import logo from "../assets/logo/webscript.png";
 // import user from "../assets/user.jpg";
 import logo from "../../logo.svg";
+import { baseUrl } from "../../Routes";
 import "./sidebar.scss";
 
 import * as Fa from "react-icons/fa";
@@ -141,7 +142,7 @@ const SideMenu = (props) => {
           ))} */}
 
           <li>
-            <Link className="menu-item" to="/">
+            <Link className="menu-item" to={baseUrl}>
               <div className="menu-icon">
                 <Fa.FaHome />
               </div>
