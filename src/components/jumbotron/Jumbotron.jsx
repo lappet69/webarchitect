@@ -5,7 +5,6 @@ import { Carousel } from "react-bootstrap";
 
 const Jumbotron = () => {
   return (
-    // <div className=" jumbotron justify-content-center">
     <div className="col-md">
       <Carousel>
         <Carousel.Item interval={1000}>
@@ -34,7 +33,6 @@ const Jumbotron = () => {
         </Carousel.Item>
       </Carousel>
     </div>
-    // </div>
   );
 };
 

@@ -2,7 +2,6 @@ import React from "react";
 
 import "./footer.scss";
 
-// import P from "../atoms/P";
 
 const Footer = () => {
   return (

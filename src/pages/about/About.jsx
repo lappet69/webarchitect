@@ -8,7 +8,7 @@ const About = () => {
 
   return (
     <div className="row">
-      <h2>{"About Us"}</h2>
+      <h2 className="text-title">{"About Us"}</h2>
       <div className="col-md profile">
         <h2>Profile</h2>
         <p className={activeIndex === 0 ? "info-faadein" : "none"} index={0}>
@@ -29,7 +29,7 @@ const About = () => {
         <h2>Team</h2>
         <div className="row justify-content-center">
           {teams.map((team) => (
-            <div className="col-md-6">
+            <div className="col-md-6" key={Math.random()}>
               <img
                 className="img-profile img-thumbnail rounded-5 "
                 src={team.url}

@@ -2,7 +2,6 @@
 
 .contact-container {
   display: flex;
-  // width: 60%;
   justify-content: center;
   background-color: red;
 }
@@ -12,14 +11,14 @@
     padding: 0;
   }
 }
-.row-h{
-  // height: auto ;
+.row-h {
 }
 
 section {
   padding: 1em 1em;
   overflow: hidden;
   position: relative;
+  height: 100vh;
 }
 *,
 ::after,

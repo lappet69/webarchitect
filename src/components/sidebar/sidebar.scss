@@ -163,19 +163,7 @@ li {
   display: block;
   font-weight: 600;
   cursor: pointer;
-  // 40em == 640px
-  // @media only screen and (max-width: 40em) {
-  //  ul{
-
-  //    display: flex;
-  //    position: absolute;
-  //    // width: 100vw;
-  //    z-index: 2000 !important;
-  //    
-  //    flex-direction: row;
-  //    top: 20px;
-  //  }
-  // }
+  
 }
 .side-menu .main-menu ul{
   @include mobile-potrait{
@@ -234,9 +222,7 @@ li {
     // top: 0;
     right: 0;
     border: solid 1px red;
-    // margin: auto;
-    // display: none;
-    // z-index: 9000;
+   
     
   }
 }
@@ -370,10 +356,7 @@ li {
 }
 
 .side-menu.inactive .side-menu-footer {
-  // opacity: 0;
-  // width: 0;
-  // height: 0;
-  // overflow: hidden;
+ 
   display: flex;
   background: none;
   // 40em == 640px

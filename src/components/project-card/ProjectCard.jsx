@@ -20,7 +20,6 @@ const ProjectCard = (props) => {
                 className="img-thumbnail"
                 alt=""
               />
-              {/* <p>{el.desc.slice(0, 100)}</p> */}
             </Link>
           </div>
         );

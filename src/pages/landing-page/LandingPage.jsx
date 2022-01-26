@@ -6,7 +6,6 @@ const LandingPage = () => {
   return (
     <div className="row jumbotron">
       <Jumbotron />
-
       <Jumbotron />
     </div>
   );

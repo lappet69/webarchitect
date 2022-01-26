@@ -1,16 +1,10 @@
 @use "../../scss/" as *;
 
-// .swiper-slide-next {
-//   margin: 0 !important;
-//   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
-// }
-
-.row{
+.row {
   height: 100vh;
   overflow-y: visible !important;
   overflow-x: hidden !important;
-  @include mobile-potrait{
-    // height: auto;
+  @include mobile-potrait {
   }
 }
 .project-grid {
@@ -21,8 +15,8 @@
   background-color: #fff;
   padding: 1rem;
   // height: 100vh;
-  @include mobile-potrait{
-    grid-template-columns: repeat(2,1fr);
+  @include mobile-potrait {
+    grid-template-columns: repeat(2, 1fr);
   }
   .swiper-slide {
     display: flex;
@@ -31,9 +25,7 @@
   }
 
   .swiper-wrapper {
-    // border: solid 1px;
     width: 50%;
-    // width: auto;
     @include mobile-potrait {
       width: 100%;
     }

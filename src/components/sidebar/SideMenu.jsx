@@ -14,45 +14,9 @@ import * as Io from "react-icons/io";
 import * as Gi from "react-icons/gi";
 import { Link, NavLink } from "react-router-dom";
 import { data } from "../../data/data";
-// import MenuItem from "./MenuItem";
 
 //
 
-// added more menuItems for testing
-export const menuItems = [
-  {
-    name: "Home",
-    exact: true,
-    to: "/",
-    iconClassName: "fas fa-user",
-  },
-  {
-    name: "About",
-    exact: true,
-    to: `/about`,
-    iconClassName: "fab fa-github-square",
-    subMenus: [
-      { name: "Team", to: "/content-2/team" },
-      { name: "Company", to: "/content-2/company" },
-    ],
-  },
-  {
-    name: "Project",
-    exact: true,
-    to: `/content`,
-    iconClassName: "bi bi-speedometer2",
-    subMenus: [
-      { name: "Rumah", to: "/content/courses" },
-      { name: "Ruko", to: "/content/ruko" },
-      { name: "Cafe", to: "/content/cafe" },
-    ],
-  },
-  {
-    name: "Contact",
-    to: `/contact`,
-    iconClassName: "bi bi-vector-pen",
-  },
-];
 
 const SideMenu = (props) => {
   const categories = [
@@ -63,7 +27,6 @@ const SideMenu = (props) => {
     ),
   ];
   const [inactive, setInactive] = useState(false);
-  const drawerRef = useRef(null);
 
   useEffect(() => {
     if (inactive) {
@@ -80,9 +43,7 @@ const SideMenu = (props) => {
     });
   };
 
-  /*just a little improvement over click function of menuItem
-    Now no need to use expand state variable in MenuItem component
-  */
+  
   useEffect(() => {
     let menuItems = document.querySelectorAll(".menu-item");
     menuItems.forEach((el) => {
@@ -99,7 +60,6 @@ const SideMenu = (props) => {
     });
   }, []);
 
-  console.log(categories);
 
   return (
     <div className={`side-menu ${inactive ? "inactive" : ""}`}>
@@ -112,35 +72,8 @@ const SideMenu = (props) => {
         </div>
       </div>
 
-      {/* <div className="search-controller">
-        <button className="search-btn">
-          <i class="bi bi-search"></i>
-        </button>
-
-        <input type="text" placeholder="search" />
-      </div> */}
-
-      {/* <div className="divider"></div> */}
-
       <div className="main-menu">
         <ul>
-          {/* {menuItems.map((menuItem, index) => (
-            <MenuItem
-              key={index}
-              name={menuItem.name}
-              exact={menuItem.exact}
-              to={menuItem.to}
-              subMenus={menuItem.subMenus || []}
-              iconClassName={menuItem.iconClassName}
-              Fa={menuItem.Fa}
-              onClick={(e) => {
-                if (inactive) {
-                  setInactive(false);
-                }
-              }}
-            />
-          ))} */}
-
           <li>
             <Link className="menu-item" to="/webarchitect">
               <div className="menu-icon">
@@ -156,7 +89,7 @@ const SideMenu = (props) => {
               </div>
               <span>{"About"}</span>
             </Link>
-            <ul className={`sub-menu`}>
+            {/* <ul className={`sub-menu`}>
               <li key={"index"}>
                 <NavLink to={"/webarchitect/about/company"}>
                   <Io.IoMdBusiness />
@@ -167,7 +100,7 @@ const SideMenu = (props) => {
                   {"Team"}
                 </NavLink>
               </li>
-            </ul>
+            </ul> */}
           </li>
           <li>
             <Link to={"/webarchitect/project"} className={`menu-item`}>
@@ -199,24 +132,14 @@ const SideMenu = (props) => {
             </div>
             <span>Contact</span>
           </Link>
-          {/* <MenuItem
-            name={"Content"}
-            subMenus={[{ name: "Courses" }, { name: "Videos" }]}
-          /> */}
-          {/* <li>
-            <a className="menu-item">
-              <div className="menu-icon">
-                <i class="bi bi-vector-pen"></i>
-              </div>
-              <span>Design</span>
-            </a>
-          </li> */}
         </ul>
       </div>
       <div className="side-menu-footer">
-        {/* <div className="avatar"><img src={"user"} alt="user" /></div> */}
         <div className="sosmed-info">
-          <a href={"https://www.instagram.com/scarlett.actress/"} target="_blank" >
+          <a
+            href={"https://www.instagram.com/scarlett.actress/"}
+            target="_blank"
+          >
             <Fa.FaInstagram />
           </a>
           <a target={"_blank"} href={"https://www.facebook.com/Scarjolivex/"}>

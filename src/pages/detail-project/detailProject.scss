@@ -3,7 +3,6 @@
 .project-content {
   background: #f9f8fd;
   background-position: 0% 0%;
-  // padding: 0.5em 1em !important;
   display: block;
   transform: none;
   box-sizing: border-box;
@@ -34,8 +33,6 @@
 
 .project-img {
   cursor: zoom-in;
-  // height: 100vh;
-  // width: 100%;
   img {
     border-radius: 3px;
 
@@ -58,7 +55,6 @@
     border-radius: 5px;
   }
   @include mobile-potrait {
-    // width: 100%;
   }
 }
 
@@ -76,7 +72,9 @@
   display: flex;
   border-bottom: solid 0.5px #a4a6a9;
   border-top: solid 0.5px #a4a6a9;
-
+  p {
+    font-weight: 300;
+  }
   button {
     border: none;
     background: transparent;
@@ -107,9 +105,11 @@
 }
 .project-detail {
   padding: 20px 0;
-  // transform: rotate(29);
   text-align: justify;
-
+  p {
+    font-weight: 300;
+    font-size: 1.3rem;
+  }
   @include mobile-potrait {
     padding-right: 24px;
     text-align: justify;
