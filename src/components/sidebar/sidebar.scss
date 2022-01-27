@@ -1,41 +1,41 @@
 @use "../../scss/" as *;
-* {
-  margin: 0;
-  padding: 0;
-}
-ul {
-  padding: 0;
-  margin: 0;
-}
-li {
-  list-style: none;
-}
+// * {
+//   margin: 0;
+//   padding: 0;
+// }
+// ul {
+//   padding: 0;
+//   margin: 0;
+// }
+// li {
+//   list-style: none;
+// }
 
 
 /* width */
-::-webkit-scrollbar {
-  width: 3px;
-}
+// ::-webkit-scrollbar {
+//   width: 3px;
+// }
 
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
-  display: none;
-}
+// /* Track */
+// ::-webkit-scrollbar-track {
+//   box-shadow: inset 0 0 5px grey;
+//   border-radius: 10px;
+//   display: none;
+// }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #333;
-  border-radius: 10px;
-  display: none;
-}
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+//   background: #333;
+//   border-radius: 10px;
+//   display: none;
+// }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #333;
-  display: block;
-}
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   background: #333;
+//   display: block;
+// }
 
 .side-menu {
   display: flex;
@@ -44,7 +44,7 @@ li {
   float: right;
   right: 0px;
   background: #000;
-  width: 15.5em;
+  width: 100%;
   height: 100%;
   box-sizing: border-box;
   padding: 30px 20px;
@@ -53,23 +53,17 @@ li {
   @media only screen and (max-width: 40em) {
     position: relative;
     width: 100vw;
-    height: auto;
+    // height: auto;
     padding: 0px 0px;
     z-index: 99;
     top: 0;
     float: none;
   }
 }
-// @media (max-width: 991px) {
-//   .side-menu {
-//   }
-// }
-
 .side-menu.inactive {
   width: 80px;
   @include mobile-potrait{
     width: 100%;
-    height: 4.5rem;
   }
 }
 
@@ -89,6 +83,7 @@ li {
 .side-menu .top-section .logo {
   width: 40px;
   height: 40px;
+  margin-left: 10px;
   overflow: hidden;
   display: inline-block;
 }
@@ -113,10 +108,13 @@ li {
   position: absolute;
   top: 50%;
   right: 0;
+  margin-right: 20px;
+  display: none;
   transform: translateY(-75%);
   cursor: pointer;
   @media (max-width: 640px) {
     float: right;
+    display: inline;
   }
 }
 

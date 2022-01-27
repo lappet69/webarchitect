@@ -1,20 +1,21 @@
 @use "../../scss/" as *;
 
 .footer {
-  position: relative;
-  width: 100%;
+
+  // position: relative;
+  // width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
-
-  padding-top: 3rem;
-  color: gray;
-  font-weight: lighter;
-  font-size: 1rem;
-  padding-bottom: 3rem;
+// bottom: 0;
+  padding: 1rem;
+//   color: gray;
+//   font-weight: lighter;
+//   font-size: 1rem;
+  // padding-bottom: 1.8rem;
   background: #000;
   @include mobile-potrait {
-    font-size: 12px;
+    font-size: 0.9rem;
   }
 }

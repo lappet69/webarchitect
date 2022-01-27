@@ -20,6 +20,7 @@ p.text-proyek {
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: -30px;
+  text-decoration: none;
 }
 .category-box {
   text-align: center;
@@ -28,7 +29,7 @@ p.text-proyek {
   }
 }
 .col-md-6 img {
-  height: 100vh;
+  // height: 100vh;
 
   @include mobile-potrait {
     height: auto;
@@ -44,6 +45,7 @@ p.text-proyek {
       color: #fff;
       text-shadow: 2px 2px #666;
       text-transform: uppercase;
+      text-decoration: none;
     }
   }
 }

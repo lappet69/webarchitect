@@ -9,7 +9,7 @@ const Category = () => {
   const { category } = useParams();
 
   return (
-    <div className="container-fluid justify-content-center">
+    <div className="content">
       <div className="row justify-content-center category-box">
         {data.map((el) => {
           if (el.category === category) {
@@ -28,7 +28,7 @@ const Category = () => {
           }
         })}
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
