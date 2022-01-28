@@ -20,6 +20,7 @@ const ProjectCard = (props) => {
                 className="img-thumbnail"
                 alt=""
               />
+              <p className="text-proyek">{el.pName}</p>
             </Link>
           </div>
         );

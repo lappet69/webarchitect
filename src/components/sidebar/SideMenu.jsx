@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-no-target-blank */
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, } from "react";
 // import logo from "../assets/logo/webscript.png";
-// import user from "../assets/user.jpg";
 import logo from "../../logo.svg";
 
 import "./sidebar.scss";
@@ -10,10 +9,11 @@ import * as Fa from "react-icons/fa";
 import * as Bi from "react-icons/bi";
 import * as Hi from "react-icons/hi";
 import * as Md from "react-icons/md";
-import * as Io from "react-icons/io";
+// import * as Io from "react-icons/io";
 import * as Gi from "react-icons/gi";
 import { Link, NavLink } from "react-router-dom";
 import { data } from "../../data/data";
+import $ from "jquery";
 
 //
 
@@ -26,7 +26,7 @@ const SideMenu = (props) => {
     ),
   ];
   const [inactive, setInactive] = useState(false);
-
+  const widthWindow = $(window).width();
   useEffect(() => {
     if (inactive) {
       // removeActiveClassFromSubMenu();
@@ -40,7 +40,6 @@ const SideMenu = (props) => {
     document.querySelectorAll(".sub-menu").forEach((el) => {
       el.classList.remove("active");
     });
-    
   };
 
   useEffect(() => {
@@ -57,7 +56,6 @@ const SideMenu = (props) => {
         }
       });
     });
-    
   }, []);
 
   return (
@@ -78,7 +76,13 @@ const SideMenu = (props) => {
         <div className="main-menu">
           <ul>
             <li>
-              <Link className="menu-item" to="/webarchitect" onClick={()=>setInactive(!inactive)}>
+              <Link
+                className="menu-item"
+                to="/webarchitect"
+                onClick={
+                   () =>  widthWindow <= 700 ? setInactive(!inactive) :false
+                }
+              >
                 <div className="menu-icon">
                   <Fa.FaHome />
                 </div>
@@ -86,7 +90,13 @@ const SideMenu = (props) => {
               </Link>
             </li>
             <li>
-              <Link to={"/webarchitect/about"} onClick={()=>setInactive(!inactive)} className={`menu-item`}>
+              <Link
+                to={"/webarchitect/about"}
+                onClick={
+                  () =>  widthWindow <= 700 ? setInactive(!inactive) :false
+                }
+                className={`menu-item`}
+              >
                 <div className="menu-icon">
                   <Hi.HiUserGroup />
                 </div>
@@ -106,7 +116,13 @@ const SideMenu = (props) => {
             </ul> */}
             </li>
             <li>
-              <Link to={"/webarchitect/project"} className={`menu-item`} onClick={()=>setInactive(!inactive)} >
+              <Link
+                to={"/webarchitect/project"}
+                className={`menu-item`}
+                onClick={
+                  () =>  widthWindow <= 700 ? setInactive(!inactive) :false
+                }
+              >
                 <div className="menu-icon">
                   <Bi.BiBuildingHouse />
                 </div>
@@ -114,22 +130,41 @@ const SideMenu = (props) => {
               </Link>
               <ul className={`sub-menu`}>
                 <li key={"index"}>
-                  <NavLink to={"/webarchitect/p/" + categories[0]} onClick={()=>setInactive(!inactive)}>
+                  <NavLink
+                    to={"/webarchitect/p/" + categories[0]}
+                    onClick={
+                      () =>  widthWindow <= 700 ? setInactive(!inactive) :false
+                    }
+                  >
                     <Md.MdHouse />
                     {"Rumah"}
                   </NavLink>
-                  <NavLink to={"/webarchitect/p/" + categories[1]} onClick={()=>setInactive(!inactive)}>
+                  <NavLink
+                    to={"/webarchitect/p/" + categories[1]}
+                    onClick={
+                      () =>  widthWindow <= 700 ? setInactive(!inactive) :false
+                    }
+                  >
                     <Gi.GiShop />
                     {"Ruko"}
                   </NavLink>
-                  <NavLink to={"/webarchitect/p/" + categories[2]} onClick={()=>setInactive(!inactive)}>
+                  <NavLink
+                    to={"/webarchitect/p/" + categories[2]}
+                    onClick={
+                      () =>  widthWindow <= 700 ? setInactive(!inactive) :false
+                    }
+                  >
                     <Md.MdOutlineLocalConvenienceStore />
                     {"Kios"}
                   </NavLink>
                 </li>
               </ul>
             </li>
-            <Link className="menu-item" to="/webarchitect/contact" onClick={()=>setInactive(!inactive)}>
+            <Link
+              className="menu-item"
+              to="/webarchitect/contact"
+              onClick={() =>  widthWindow <= 700 ? setInactive(!inactive) :false}
+            >
               <div className="menu-icon">
                 <Md.MdOutlineContactMail />
               </div>

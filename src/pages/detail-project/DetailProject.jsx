@@ -16,7 +16,7 @@ const DetailProject = (props) => {
     <div className="content">
       <div className="project-content-container">
         <div className="project-img">
-          <Swiper grabCursor={true} spaceBetween={15} slidesPerView={"auto"}>
+          <Swiper grabCursor={true} spaceBetween={15} slidesPerView={"1"}>
             {item.url.map((x) => (
               <SwiperSlide key={x}>
                 <Zoom media="(max-width:100vw" srcSet={x} className="zoom-img">

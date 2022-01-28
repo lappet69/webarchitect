@@ -1,7 +1,6 @@
 import React from "react";
 import axios from "axios";
 import "./contact.scss";
-import Footer from "../../components/footer/Footer";
 
 class Contact extends React.Component {
   constructor(props) {
@@ -35,7 +34,7 @@ class Contact extends React.Component {
 
   render() {
     return (
-      <>
+      <div className="content">
         <section id="contact" className="contact">
           <div
             className="container aos-init aos-animate justify-content-center"
@@ -152,8 +151,7 @@ class Contact extends React.Component {
             </div>
           </div>
         </section>
-        <Footer />
-      </>
+      </div>
     );
   }
 

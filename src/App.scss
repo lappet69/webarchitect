@@ -377,7 +377,7 @@ main{
   display: grid;
   height: 100vh;
   grid-template-columns:  auto auto 270px ;
-  grid-template-rows: auto auto 270px;
+  grid-template-rows: auto auto 120px;
   grid-template-areas: "content content sidebar"
               "content content sidebar"
               "content content footer";
@@ -413,4 +413,8 @@ footer{
 
 a{
   text-decoration: none;
+}
+
+h1,h2,h3{
+    font-weight:bold ;
 }
