@@ -13,27 +13,29 @@ const DetailProject = (props) => {
   const [src, setSrc] = useState(item.url[0]);
 
   return (
-    <div className="col-md">
-    <div className="project-content">
+    <div className="content">
       <div className="project-content-container">
         <div className="project-img">
           <Swiper grabCursor={true} spaceBetween={15} slidesPerView={"auto"}>
             {item.url.map((x) => (
               <SwiperSlide key={x}>
                 <Zoom media="(max-width:100vw" srcSet={x} className="zoom-img">
-                  
-                <img src={typeof item.url == 'object'  ? src : item.url} alt='' className="img-thumbnail"/>
+                  <img
+                    src={typeof item.url == "object" ? src : item.url}
+                    alt=""
+                    className="img-thumbnail"
+                  />
                 </Zoom>
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className="img-thumbnail">
+          <div className="thumbnail">
             {typeof item.url == "object" ? (
               item.url.map((el) => (
-                <img onClick={() => setSrc(el)} key={el} src={el} alt="" />
+                <img className="img-thumbnail" onClick={() => setSrc(el)} key={el} src={el} alt="" />
               ))
             ) : (
-              <img key={item.url} src={item.url} alt="" />
+              <img className="img-thumbnail" key={item.url} src={item.url} alt="" />
             )}
           </div>
         </div>
@@ -79,7 +81,6 @@ const DetailProject = (props) => {
           </div>
         </div>
       </div>
-    </div>
     </div>
   );
 };

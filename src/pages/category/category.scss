@@ -23,11 +23,14 @@ p.text-proyek {
   text-decoration: none;
 }
 .category-box {
+  display: grid;
   text-align: center;
+  grid-template-columns:1fr 1fr;
   @include mobile-potrait {
-    // height: auto !important;
+    grid-template-columns: 1fr;
   }
 }
+
 .col-md-6 img {
   // height: 100vh;
 
@@ -36,7 +39,7 @@ p.text-proyek {
   }
 }
 
-.col-md-6 {
+.photo  {
   overflow-y: hidden;
   :hover {
     p.text-proyek {

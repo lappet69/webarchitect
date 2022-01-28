@@ -29,7 +29,7 @@ const SideMenu = (props) => {
 
   useEffect(() => {
     if (inactive) {
-      removeActiveClassFromSubMenu();
+      // removeActiveClassFromSubMenu();
     }
 
     props.onCollapse(inactive);
@@ -40,6 +40,7 @@ const SideMenu = (props) => {
     document.querySelectorAll(".sub-menu").forEach((el) => {
       el.classList.remove("active");
     });
+    
   };
 
   useEffect(() => {
@@ -56,6 +57,7 @@ const SideMenu = (props) => {
         }
       });
     });
+    
   }, []);
 
   return (
@@ -76,7 +78,7 @@ const SideMenu = (props) => {
         <div className="main-menu">
           <ul>
             <li>
-              <Link className="menu-item" to="/webarchitect">
+              <Link className="menu-item" to="/webarchitect" onClick={()=>setInactive(!inactive)}>
                 <div className="menu-icon">
                   <Fa.FaHome />
                 </div>
@@ -84,7 +86,7 @@ const SideMenu = (props) => {
               </Link>
             </li>
             <li>
-              <Link to={"/webarchitect/about"} className={`menu-item`}>
+              <Link to={"/webarchitect/about"} onClick={()=>setInactive(!inactive)} className={`menu-item`}>
                 <div className="menu-icon">
                   <Hi.HiUserGroup />
                 </div>
@@ -104,7 +106,7 @@ const SideMenu = (props) => {
             </ul> */}
             </li>
             <li>
-              <Link to={"/webarchitect/project"} className={`menu-item`}>
+              <Link to={"/webarchitect/project"} className={`menu-item`} onClick={()=>setInactive(!inactive)} >
                 <div className="menu-icon">
                   <Bi.BiBuildingHouse />
                 </div>
@@ -112,22 +114,22 @@ const SideMenu = (props) => {
               </Link>
               <ul className={`sub-menu`}>
                 <li key={"index"}>
-                  <NavLink to={"/webarchitect/p/" + categories[0]}>
+                  <NavLink to={"/webarchitect/p/" + categories[0]} onClick={()=>setInactive(!inactive)}>
                     <Md.MdHouse />
                     {"Rumah"}
                   </NavLink>
-                  <NavLink to={"/webarchitect/p/" + categories[1]}>
+                  <NavLink to={"/webarchitect/p/" + categories[1]} onClick={()=>setInactive(!inactive)}>
                     <Gi.GiShop />
                     {"Ruko"}
                   </NavLink>
-                  <NavLink to={"/webarchitect/p/" + categories[2]}>
+                  <NavLink to={"/webarchitect/p/" + categories[2]} onClick={()=>setInactive(!inactive)}>
                     <Md.MdOutlineLocalConvenienceStore />
                     {"Kios"}
                   </NavLink>
                 </li>
               </ul>
             </li>
-            <Link className="menu-item" to="/webarchitect/contact">
+            <Link className="menu-item" to="/webarchitect/contact" onClick={()=>setInactive(!inactive)}>
               <div className="menu-icon">
                 <Md.MdOutlineContactMail />
               </div>

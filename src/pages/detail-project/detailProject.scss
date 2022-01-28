@@ -6,7 +6,7 @@
   display: block;
   transform: none;
   box-sizing: border-box;
-  height: 100vh;
+  // height: 100vh;
   max-height: auto;
 
   animation-name: fadein;
@@ -21,8 +21,13 @@
 
 .project-content-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
+
+  grid-template-columns: 2fr 2fr;
+  // grid-template-rows: 100vh;
+  grid-template-areas:
+    "imgs info"
+    "imgs  info";
+
   box-sizing: border-box;
   @include mobile-potrait {
     display: flex;
@@ -32,6 +37,7 @@
 }
 
 .project-img {
+  grid-area: imgs;
   cursor: zoom-in;
   img {
     border-radius: 3px;
@@ -45,22 +51,23 @@
     }
   }
 }
-.img-thumbnail {
+.thumbnail {
   cursor: pointer;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+  grid-template-rows: 50px;
   box-sizing: border-box;
-  img {
-    border-radius: 5px;
-  }
-  @include mobile-potrait {
+  img{
+    width: 25%;
+    object-fit: cover;
   }
 }
 
 .project-info-container {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  grid-area: info;
+  // flex-direction: column;
   padding-left: 2em;
   @include mobile-potrait {
     border-radius: 5px;

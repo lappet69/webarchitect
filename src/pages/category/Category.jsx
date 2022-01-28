@@ -10,11 +10,11 @@ const Category = () => {
 
   return (
     <div className="content">
-      <div className="row justify-content-center category-box">
+      <div className="category-box">
         {data.map((el) => {
           if (el.category === category) {
             return (
-              <div className="col-md-6" key={el.id}>
+              <div className="photo" key={el.id}>
                 <Link to={"/webarchitect/detail/project/" + el.id}>
                   <img
                     src={typeof el.url == "object" ? el.url[0] : el.url}
