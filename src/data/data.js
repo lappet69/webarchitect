@@ -158,6 +158,40 @@ export const data = [
     desc: "Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci.",
     category: "cafe",
   },
+  {
+    id: 8,
+    url: [
+      "https://source.unsplash.com/g39p1kDjvSY/640x420",
+      "https://source.unsplash.com/hHz4yrvxwlA/640x420",
+      "https://source.unsplash.com/tVzyDSV84w8/640x420",
+    ],
+    pName: "Rumah Perumahan",
+    type: "45",
+    location: "Kemantran, Kulon",
+    siteArea: "14.500 sqm",
+    builtArea: "39.000 sqm",
+    height: "34 storeys",
+    year: "2015 - 2018",
+    desc: "In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.",
+    category: "house",
+  },
+  {
+    id: 9,
+    url: [
+      "https://source.unsplash.com/50ijCEHhN8o/640x420",
+      "https://source.unsplash.com/mQ4Ty8VmnPk/640x420",
+      "https://source.unsplash.com/tVzyDSV84w8/640x420",
+    ],
+    pName: "Rumah Perumahan",
+    type: "45",
+    location: "Kemantran, Kulon",
+    siteArea: "14.500 sqm",
+    builtArea: "39.000 sqm",
+    height: "34 storeys",
+    year: "2015 - 2018",
+    desc: "In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.",
+    category: "ruko",
+  },
 ];
 
 export const categories = ["house", "ruko", "kios", "cafe"];
