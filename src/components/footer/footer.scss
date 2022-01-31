@@ -1,18 +1,18 @@
 @use "../../scss/" as *;
 
 .footer {
-  position: relative;
+  // position: relative;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  bottom: 0 !important;
+  // bottom: 0 !important;
 
   color: #666;
 
   background: #000;
   @include mobile-potrait {
-    font-size: 0.9rem;
+    // font-size: 0.9rem;
   }
 }

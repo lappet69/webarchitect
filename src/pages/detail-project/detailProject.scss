@@ -6,7 +6,6 @@
   display: block;
   transform: none;
   box-sizing: border-box;
-  // height: 100vh;
   max-height: auto;
 
   animation-name: fadein;
@@ -22,16 +21,18 @@
 .project-content-container {
   display: grid;
 
-  grid-template-columns: 2fr 2fr;
-  // grid-template-rows: 100vh;
+  grid-template-columns: 1fr 1fr;
+  // grid-template-rows: auto;
   grid-template-areas:
     "imgs info"
     "imgs  info";
 
+    align-items: center;
   box-sizing: border-box;
   @include mobile-potrait {
     display: flex;
     flex-direction: column;
+    // align-items: baseline;
     width: 100%;
   }
 }
@@ -66,12 +67,15 @@
 
 .project-info-container {
   // display: flex;
+  padding: 6rem 1rem !important;
+  align-items: center;
   grid-area: info;
+  // justify-content: center;
   // flex-direction: column;
   padding-left: 2em;
   @include mobile-potrait {
     border-radius: 5px;
-    padding: 10px 0;
+    padding: 10px 10px !important;
     width: 100%;
   }
 }
@@ -133,6 +137,22 @@
 }
 .none {
   display: none;
+}
+
+.box-data{
+  display: grid;
+  grid-template-columns: 1fr ;
+  row-gap: 20px;
+  column-gap: 10px;
+  padding-top: 10px;
+  align-content: space-between;
+  h4{
+    font-size: 20px !important;
+  }
+  p{
+    font-size:  20px !important;
+  }
+  // flex-direction: column;
 }
 
 @keyframes fadein {

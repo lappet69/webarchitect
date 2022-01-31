@@ -16,7 +16,7 @@ const DetailProject = (props) => {
     <div className="content">
       <div className="project-content-container">
         <div className="project-img">
-          <Swiper grabCursor={true} spaceBetween={15} slidesPerView={"1"}>
+          <Swiper grabCursor={true} spaceBetween={15} slidesPerView={"auto"}>
             {item.url.map((x) => (
               <SwiperSlide key={x}>
                 <Zoom media="(max-width:100vw" srcSet={x} className="zoom-img">
@@ -32,50 +32,81 @@ const DetailProject = (props) => {
           <div className="thumbnail">
             {typeof item.url == "object" ? (
               item.url.map((el) => (
-                <img className="img-thumbnail" onClick={() => setSrc(el)} key={el} src={el} alt="" />
+                <img
+                  className="img-thumbnail"
+                  onClick={() => setSrc(el)}
+                  key={el}
+                  src={el}
+                  alt=""
+                />
               ))
             ) : (
-              <img className="img-thumbnail" key={item.url} src={item.url} alt="" />
+              <img
+                className="img-thumbnail"
+                key={item.url}
+                src={item.url}
+                alt=""
+              />
             )}
           </div>
         </div>
         <div className="project-info-container">
-          <h2>{item.pName}</h2>
+          <h2 className="h2">{item.pName}</h2>
           <div className="project-info">
             <button
               className={activeIndex === 0 ? "active" : "false"}
               onClick={() => setActiveIndex(0)}
               to="#"
             >
-              Project Info
+            <h3 className="fs-5"> Project Data</h3>
             </button>
             <button
               className={activeIndex === 1 ? "active" : "false"}
               onClick={() => setActiveIndex(1)}
               to="#"
             >
-              Project Data
+              <h3 className="fs-5">Project Info</h3>
             </button>
           </div>
           <div className="project-detail">
-            {activeIndex === 0 ? (
+            {activeIndex === 1 ? (
               <p
-                className={activeIndex === 0 ? "info-fadein" : "none"}
+                className={activeIndex === 1 ? "info-fadein" : "none"}
                 index={0}
               >
                 {item.desc}
               </p>
             ) : (
               <p
-                className={activeIndex === 1 ? "naration-fadein" : "none"}
-                index={1}
+                className={activeIndex === 0 ? "naration-fadein" : "none"}
+                index={0}
               >
-                <p>Type: {item.type}</p>
-                <p>Lokasi: {item.location}</p>
-                <p>Site Area: {item.siteArea}</p>
-                <p>Build Area: {item.builtArea}</p>
-                <p>Height : {item.height}</p>
-                <p>Year : {item.year}</p>
+                <div className="row box-data">
+                  <div className="col-md">
+                    <h4 className="">Type </h4>
+                    <p>{item.type}</p>
+                  </div>
+                  <div className="col-md">
+                    <h4 className="">Lokasi </h4>
+                    <p> {item.location}</p>
+                  </div>
+                  <div className="col-md">
+                    <h4 className="">Site Area </h4>
+                    <p> {item.siteArea}</p>
+                  </div>
+                  <div className="col-md">
+                    <h4 className="">Build Area</h4>
+                    <p> {item.builtArea}</p>
+                  </div>
+                  <div className="col-md">
+                    <h4 className="">Height </h4>
+                    <p>{item.height}</p>
+                  </div>
+                  <div className="col-md">
+                    <h4 className="">Year</h4>
+                    <p>{item.year}</p>
+                  </div>
+                </div>
               </p>
             )}
           </div>

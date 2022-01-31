@@ -10,7 +10,7 @@ const About = () => {
     <>
     <div className="content">
       <div className="row">
-        <h1 className="text-title">{"About Us"}</h1>
+      <h2 className="h2 p-1 mx-2">About Us</h2>
         <div className="col-md profile">
           <h2>Profile</h2>
           <p className={activeIndex === 0 ? "info-faadein" : "none"} index={0}>
