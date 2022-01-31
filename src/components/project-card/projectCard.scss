@@ -5,8 +5,30 @@
   padding-right: 0px !important;
 }
 
-.col-md-4 > img {
-  // height: 480px !important;
+p.text-proyek {
+  position: relative;
+  // box-sizing: border-box;
+  color: transparent;
+  z-index: 7778;
+
+  top: -50% ;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: -30px;
+  text-decoration: none;
+}
+.col-md-6{
+  text-align: center;
+  :hover {
+    p.text-proyek {
+      animation-name: slide;
+      animation-duration: 0.7s;
+      color: #fff;
+      text-shadow: 2px 2px #666;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
 }
 .project-thumbnail {
   height: fit-content;

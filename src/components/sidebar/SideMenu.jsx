@@ -72,7 +72,7 @@ const SideMenu = (props) => {
             {inactive ? <Fa.FaRegWindowClose /> : <Fa.FaAlignJustify />}
           </div>
         </div>
-
+        <div className="divider"></div>
         <div className="main-menu">
           <ul>
             <li>
@@ -172,6 +172,7 @@ const SideMenu = (props) => {
             </Link>
           </ul>
         </div>
+        <div className="divider"></div>
         <div className="side-menu-footer">
           <div className="sosmed-info">
             <a

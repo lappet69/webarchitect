@@ -13,7 +13,7 @@
 }
 
 @mixin mobile-potrait {
-  @media (max-width: $mobile-potrait) {
+  @media only screen and (max-width: $mobile-potrait) {
     /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
     @content;
   }
