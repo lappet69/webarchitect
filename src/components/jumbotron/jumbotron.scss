@@ -9,7 +9,7 @@
   animation-name: fadein;
   padding-left: 0 !important;
   @include mobile-potrait {
-    height: 100%;
+    // height: 100%;
     .carousel-control-next {
       display: none;
     }
