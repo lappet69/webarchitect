@@ -19,14 +19,16 @@ export const teams = [
   },
 ];
 
+const img1 =require('../components/assets/gb-1.jpg')
+const img2 =require('../components/assets/gb-3.jpg')
 export const data = [
   {
     id: 0,
     url: [
-      "https://source.unsplash.com/178j8tJrNlc/640x420",
-      "https://source.unsplash.com/z61hzeqMuow/640x420",
-      "https://source.unsplash.com/TRCJ-87Yoh0/640x420",
-      "https://source.unsplash.com/oGmf8o53LeE/640x420",
+      img1,
+      "https://source.unsplash.com/z61hzeqMuow/640x360",
+      "https://source.unsplash.com/TRCJ-87Yoh0/640x360",
+      "https://source.unsplash.com/oGmf8o53LeE/640x360",
     ],
     pName: "Rumah petak",
     type: "Office Tower",
@@ -41,9 +43,9 @@ export const data = [
   {
     id: 1,
     url: [
-      "https://source.unsplash.com/TiVPTYCG_3E/640x420",
-      "https://source.unsplash.com/z61hzeqMuow/640x420",
-      "https://source.unsplash.com/A8W70m5jv_k/640x420",
+      img2,
+      "https://source.unsplash.com/TiVPTYCG_3E/640x360",
+      "https://source.unsplash.com/A8W70m5jv_k/640x360",
     ],
     pName: "Rumah Perumahan",
     type: "45",
@@ -58,10 +60,10 @@ export const data = [
   {
     id: 2,
     url: [
-      "https://source.unsplash.com/JxeLgp_2cSs/640x420",
-      "https://source.unsplash.com/50ijCEHhN8o/640x420",
-      "https://source.unsplash.com/06MrWDQqsZ4/640x420",
-      "https://source.unsplash.com/O0czDp42LDA/640x420",
+      "https://source.unsplash.com/JxeLgp_2cSs/640x360",
+      "https://source.unsplash.com/50ijCEHhN8o/640x360",
+      "https://source.unsplash.com/06MrWDQqsZ4/640x360",
+      "https://source.unsplash.com/O0czDp42LDA/640x360",
     ],
     pName: "Marvels Square",
     type: "21/24",
@@ -76,9 +78,9 @@ export const data = [
   {
     id: 3,
     url: [
-      "https://source.unsplash.com/F6-U5fGAOik/640x420",
-      "https://source.unsplash.com/eWzC1UwAIlw/640x420",
-      "https://source.unsplash.com/yfaEuuackFw/640x420",
+      "https://source.unsplash.com/F6-U5fGAOik/640x360",
+      "https://source.unsplash.com/eWzC1UwAIlw/640x360",
+      "https://source.unsplash.com/yfaEuuackFw/640x360",
     ],
     pName: "Hogwarts Square",
     type: "Office Tower",
@@ -93,9 +95,9 @@ export const data = [
   {
     id: 4,
     url: [
-      "https://source.unsplash.com/tKCd-IWc4gI/640x420",
-      "https://source.unsplash.com/s1YItIZpQ2c/640x420",
-      "https://source.unsplash.com/RCmr0Pe9Uxg/640x420",
+      "https://source.unsplash.com/tKCd-IWc4gI/640x360",
+      "https://source.unsplash.com/s1YItIZpQ2c/640x360",
+      "https://source.unsplash.com/RCmr0Pe9Uxg/640x360",
     ],
     pName: "Kios 24 Jam",
     type: "Office Tower",
@@ -110,9 +112,9 @@ export const data = [
   {
     id: 5,
     url: [
-      "https://source.unsplash.com/l7nAoFfyufo/640x420",
-      "https://source.unsplash.com/z6SXax6vhm0/640x420",
-      "https://source.unsplash.com/oWsy_TQAScI/640x420",
+      "https://source.unsplash.com/l7nAoFfyufo/640x360",
+      "https://source.unsplash.com/z6SXax6vhm0/640x360",
+      "https://source.unsplash.com/oWsy_TQAScI/640x360",
     ],
     pName: "Kios Mbak Yul",
     type: "Office Tower",
@@ -127,9 +129,9 @@ export const data = [
   {
     id: 6,
     url: [
-      "https://source.unsplash.com/D-0BycLykL0/640x420",
-      "https://source.unsplash.com/W9kq9suABY4/640x420",
-      "https://source.unsplash.com/1KWncoLB1V8/640x420",
+      "https://source.unsplash.com/D-0BycLykL0/640x360",
+      "https://source.unsplash.com/W9kq9suABY4/640x360",
+      "https://source.unsplash.com/1KWncoLB1V8/640x360",
     ],
     pName: "Kios Sorjem",
     type: "Office Tower",
@@ -144,9 +146,9 @@ export const data = [
   {
     id: 7,
     url: [
-      "https://source.unsplash.com/8IKf54pc3qk/640x420",
-      "https://source.unsplash.com/tKN1WXrzQ3s/640x420",
-      "https://source.unsplash.com/I79Pgmhmy5M/640x420",
+      "https://source.unsplash.com/8IKf54pc3qk/640x360",
+      "https://source.unsplash.com/tKN1WXrzQ3s/640x360",
+      "https://source.unsplash.com/I79Pgmhmy5M/640x360",
     ],
     pName: "Cafe inn",
     type: "Office Tower",
@@ -161,9 +163,9 @@ export const data = [
   {
     id: 8,
     url: [
-      "https://source.unsplash.com/g39p1kDjvSY/640x420",
-      "https://source.unsplash.com/hHz4yrvxwlA/640x420",
-      "https://source.unsplash.com/tVzyDSV84w8/640x420",
+      "https://source.unsplash.com/g39p1kDjvSY/640x360",
+      "https://source.unsplash.com/hHz4yrvxwlA/640x360",
+      "https://source.unsplash.com/tVzyDSV84w8/640x360",
     ],
     pName: "Rumah Perumahan",
     type: "45",
@@ -178,9 +180,9 @@ export const data = [
   {
     id: 9,
     url: [
-      "https://source.unsplash.com/50ijCEHhN8o/640x420",
-      "https://source.unsplash.com/mQ4Ty8VmnPk/640x420",
-      "https://source.unsplash.com/tVzyDSV84w8/640x420",
+      "https://source.unsplash.com/50ijCEHhN8o/640x360",
+      "https://source.unsplash.com/mQ4Ty8VmnPk/640x360",
+      "https://source.unsplash.com/tVzyDSV84w8/640x360",
     ],
     pName: "Rumah Perumahan",
     type: "45",

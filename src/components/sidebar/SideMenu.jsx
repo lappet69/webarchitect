@@ -9,6 +9,7 @@ import * as Fa from "react-icons/fa";
 import * as Bi from "react-icons/bi";
 import * as Hi from "react-icons/hi";
 import * as Md from "react-icons/md";
+import * as Bs from "react-icons/bs";
 // import * as Io from "react-icons/io";
 import * as Gi from "react-icons/gi";
 import { Link, NavLink } from "react-router-dom";
@@ -185,7 +186,7 @@ const SideMenu = (props) => {
               <Fa.FaFacebookSquare />
             </a>
             <a target={"_blank"} href={"https://twitter.com/scarlett_jo"}>
-              <Fa.FaTwitter />
+              <Bs.BsEnvelope />
             </a>
           </div>
         </div>

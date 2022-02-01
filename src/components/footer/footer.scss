@@ -8,10 +8,11 @@
   justify-content: center;
   align-items: center;
   // bottom: 0 !important;
+  line-height: 10px;
 
-  color: #666;
-
-  background: #000;
+  color: #000;
+font-size: 12px;
+  background: #3D464D;
   @include mobile-potrait {
     // font-size: 0.9rem;
   }

@@ -32,13 +32,20 @@
   }
 }
 
+.carousel-caption{
+  z-index: 33;
+}
+
 .carousel-inner {
   img {
     height: 100vh;
     @media only screen and (max-width:40em) {
-      height: 100% !important;
-      // padding:10px !important;
+      background-repeat: no-repeat;
+      background-position-y:  10px !important;
       background-size: cover !important;
+      // height: 100% !important;
+      // padding:10px !important;
+
     }
   }
 }
