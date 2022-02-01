@@ -23,7 +23,7 @@ const DetailProject = (props) => {
                   <img
                     src={typeof item.url == "object" ? src : item.url}
                     alt=""
-                    className="img-thumbnail"
+                    className="image-custom img-thumbnail"
                   />
                 </Zoom>
               </SwiperSlide>
@@ -33,7 +33,7 @@ const DetailProject = (props) => {
             {typeof item.url == "object" ? (
               item.url.map((el) => (
                 <img
-                  className="img-thumbnail"
+                  className="image-custom img-thumbnail"
                   onClick={() => setSrc(el)}
                   key={el}
                   src={el}

@@ -1,50 +1,65 @@
 @use "../../scss/" as *;
 
-.text-title {
-  padding: 0.5rem !important;
-}
-.profile {
-  padding: 0.5rem !important;
-  background-color: #fff;
-  border: 1px solid #dee2e6;
-  border-radius: 0.25rem;
-  max-width: 100%;
-  height: auto;
-  p {
-    font-weight: 300;
-  }
+.about-us {
+  display: flex;
+  justify-content: center;
+  padding: 3em 0 0 0;
 }
 
-.box-team {
-  padding: 0.5rem !important;
-  background-color: #fff;
-  border: 1px solid #dee2e6;
-  border-radius: 0.25rem;
-  max-width: 100%;
-  height: auto;
+.nav-link.active {
+  background-color: transparent !important;
+  color: #fff !important;
+}
+.nav-item,.nav-link{
+  border-bottom: none;
+  color: #000;
+  :hover{
+    color: #fff !important;
+  }
+}
+.vision,
+.mission,
+.value {
+  display: flex;
+  flex-direction: column;
+  animation-duration: 2s;
+  padding: 3em;
+  justify-content: center;
   text-align: center;
-  img {
-    margin: auto;
-  }
-  p {
-    font-weight: 300;
-  }
+  min-height: 70%;
+  color: #fff;
+}
+.vision {
+  animation-name: vision;
+}
+.mission {
+  animation-name: mission;
+}
+.value {
+  animation-name: value;
 }
 
-.project-detail {
-  height: 100vh;
+@keyframes vision {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-.img-profile {
-  height: auto !important;
+@keyframes mission {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-.row {
-  --bs-gutter-x: 0 !important;
-}
-
-.project-info-container {
-  height: 100vh;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  padding: 1em;
-  background: #fff;
+@keyframes value {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

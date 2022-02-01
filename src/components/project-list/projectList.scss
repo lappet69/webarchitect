@@ -1,12 +1,7 @@
 @use "../../scss/" as *;
 
-// .row {
-//   height: 100vh;
-//   overflow-y: visible !important;
-//   overflow-x: hidden !important;
-//   @include mobile-potrait {
-//   }
-// }
+
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

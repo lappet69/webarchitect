@@ -16,16 +16,16 @@ p.text-proyek {
   color: transparent;
   z-index: 7778;
 
-  top: -50% ;
+  top: -50%;
   font-size: 1.5rem;
   font-weight: 500;
-  margin-bottom: -30px;
+  margin-bottom: -23px;
   text-decoration: none;
 }
 .category-box {
   display: grid;
   text-align: center;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   @include mobile-potrait {
     grid-template-columns: 1fr;
   }
@@ -39,9 +39,11 @@ p.text-proyek {
   }
 }
 
-.photo  {
+.photo {
   overflow-y: hidden;
+
   :hover {
+   
     p.text-proyek {
       animation-name: slide;
       animation-duration: 0.7s;
@@ -51,6 +53,9 @@ p.text-proyek {
       text-decoration: none;
     }
   }
+}
+.image-custom {
+  background-color: transparent;
 }
 
 .category-grid {
@@ -101,12 +106,12 @@ p.text-proyek {
 
 @keyframes slide {
   from {
-    top: 0% ;
+    top: 0%;
     opacity: 0;
   }
 
   to {
-    top: -50% ;
+    top: -50%;
     opacity: 1;
   }
 }

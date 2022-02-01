@@ -120,6 +120,7 @@
   p {
     font-weight: 300;
     font-size: 1.3rem;
+    color: white !important;
   }
   @include mobile-potrait {
     padding-right: 24px;
@@ -150,6 +151,7 @@
     font-size: 20px !important;
   }
   p{
+    color: white !important;
     font-size:  20px !important;
   }
   // flex-direction: column;

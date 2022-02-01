@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Footer from "../../components/footer/Footer";
 import { teams } from "../../data/data";
 import "./about.scss";
 
@@ -7,49 +6,69 @@ const About = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <>
     <div className="content">
-      <div className="row">
-      <h2 className="h2 p-1 mx-2">About Us</h2>
-        <div className="col-md profile">
-          <h2>Profile</h2>
-          <p className={activeIndex === 0 ? "info-faadein" : "none"} index={0}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
-            voluptatibus optio, magni fugiat vitae ducimus ex et impedit ipsam
-            adipisci earum, voluptatem esse. Quod quaerat assumenda expedita
-            similique sapiente eum, sint laboriosam, ullam qui corporis
-            quisquam. Ad ex dolor corrupti nulla animi assumenda exercitationem
-            consectetur, eos alias voluptates natus non quam consequatur
-            reiciendis debitis, ducimus quas, magni aliquam atque qui. Dolores,
-            explicabo esse sapiente nostrum, est corporis, illo incidunt fuga
-            laudantium in sed quae ab voluptate numquam magnam quidem. Voluptas
-            at eligendi dignissimos sit neque cum debitis odit? Labore nesciunt
-            ea repellat suscipit dicta at incidunt fugiat vel accusantium
-            dolorum.
-          </p>
-        </div>
-        <div className="col-md box-team">
-          <h2>Team</h2>
-          <div className="row justify-content-center">
-            {teams.map((team) => (
-              <div className="col-md-6" key={Math.random()}>
-                <img
-                  className="img-profile img-thumbnail rounded-5 "
-                  src={team.url}
-                  alt=""
-                />
-                <div className="team-info">
-                  <h2>{team.name}</h2>
-                  <p>{team.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      {/* <Footer />  */}
+      <div className="about-us">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <button
+              class={activeIndex === 0 ? "nav-link active" : "nav-link"}
+              onClick={() => setActiveIndex(0)}
+              aria-current="page"
+              href="#"
+            >
+              Vision
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              class={activeIndex === 1 ? "nav-link active" : "nav-link"}
+              onClick={() => setActiveIndex(1)}
+              href="#"
+            >
+              Mission
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              class={activeIndex === 2 ? "nav-link active" : "nav-link"}
+              onClick={() => setActiveIndex(2)}
+              href="#"
+            >
+              Value
+            </button>
+          </li>
+        </ul>
       </div>
+
+      <section
+        className={activeIndex === 0 ? "vision lh-base " : "none"}
+        index={0}
+      >
+        <p className="fs-2 fw-bold">
+          Vision Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Laboriosam, ipsum.
+        </p>
+      </section>
+      <section
+        className={activeIndex === 1 ? "mission lh-base " : "none"}
+        index={1}
+      >
+        <p className="fs-2 fw-bold">
+          Mission Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Mollitia, quam nulla?
+        </p>
+      </section>
+
+      <section
+        className={activeIndex === 2 ? "value lh-base " : "none"}
+        index={2}
+      >
+        <p className="fs-2 fw-bold">
+          Value Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
+          numquam voluptatibus laudantium voluptates!
+        </p>
+      </section>
     </div>
-       </> 
   );
 };
 
