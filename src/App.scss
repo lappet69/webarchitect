@@ -222,12 +222,17 @@ html {
 
 body {
   min-height: 100vh;
-  background: linear-gradient(53deg, #7f7f7f, #1c1c1c, #232323);
-  background-size: 600% 600%;
+  // background: linear-gradient(53deg, #7f7f7f, #1c1c1c, #232323);
+  background-color: #B9BABE ;
+  // background-image: url('./components/assets/bg-4.jpeg');
+  // background-size: 600% 600%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 
-  -webkit-animation: AnimationName 20s ease infinite;
-  -moz-animation: AnimationName 20s ease infinite;
-  animation: AnimationName 20s ease infinite;
+  // -webkit-animation: AnimationName 20s ease infinite;
+  // -moz-animation: AnimationName 20s ease infinite;
+  // animation: AnimationName 20s ease infinite;
 }
 .none {
   display: none;
@@ -521,7 +526,7 @@ a {
   text-decoration: none !important;
 }
 svg {
-  color: #000;
+  color: #B9BABE;
 }
 h4 {
   font-size: 2em !important;

@@ -3,10 +3,11 @@
 .project-content {
   background: #f9f8fd;
   background-position: 0% 0%;
-  display: block;
+  display: flex;
   transform: none;
   box-sizing: border-box;
-  max-height: auto;
+
+  min-height: 100%;
 
   animation-name: fadein;
   animation-duration: 2s;
@@ -20,14 +21,14 @@
 
 .project-content-container {
   display: grid;
-
-  grid-template-columns: 1fr 1fr;
-  // grid-template-rows: auto;
+  grid-template-columns: 1.5fr 1.5fr;
+  min-height: 100%;
   grid-template-areas:
     "imgs info"
     "imgs  info";
-
-    align-items: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
   box-sizing: border-box;
   @include mobile-potrait {
     display: flex;
@@ -40,6 +41,8 @@
 .project-img {
   grid-area: imgs;
   cursor: zoom-in;
+  min-height: 100%;
+  align-items: center !important;
   img {
     border-radius: 3px;
 
@@ -59,7 +62,7 @@
   height: fit-content;
   grid-template-rows: 50px;
   box-sizing: border-box;
-  img{
+  img {
     width: 25%;
     object-fit: cover;
   }
@@ -67,9 +70,10 @@
 
 .project-info-container {
   // display: flex;
-  padding: 6rem 1rem !important;
+  // padding: 6rem 1rem !important;
   align-items: center;
   grid-area: info;
+  min-height: 100%;
   // justify-content: center;
   // flex-direction: column;
   padding-left: 2em;
@@ -81,8 +85,8 @@
 }
 .project-info {
   display: flex;
-  border-bottom: solid 0.5px #a4a6a9;
-  border-top: solid 0.5px #a4a6a9;
+  border-top: solid 0.5px #000;
+  // border-bottom: solid 0.5px #000;
   p {
     font-weight: 300;
   }
@@ -91,14 +95,14 @@
     background: transparent;
     cursor: pointer;
     padding: 10px 24px 0px 0px;
-    color: #a4a6a9;
+    color: #000;
     height: 39px;
     line-height: 20px;
   }
   button.active {
     color: #000;
     font-weight: bold;
-    border-bottom: solid 2px #f9d12b;
+    border-bottom: solid 2px #000;
     position: relative;
     top: 1px;
   }
@@ -115,12 +119,12 @@
   }
 }
 .project-detail {
-  padding: 20px 0;
+  padding: 20px 0 2px 0;
   text-align: justify;
   p {
     font-weight: 300;
     font-size: 1.3rem;
-    color: white !important;
+    color: black !important;
   }
   @include mobile-potrait {
     padding-right: 24px;
@@ -140,19 +144,21 @@
   display: none;
 }
 
-.box-data{
+.box-data {
   display: grid;
-  grid-template-columns: 1fr ;
-  row-gap: 20px;
+  // grid-template-columns: 1fr;
+  row-gap: 10.5px;
   column-gap: 10px;
-  padding-top: 10px;
-  align-content: space-between;
-  h4{
-    font-size: 20px !important;
+  margin-left: 2px;
+  // padding-top: 10px;
+  // border: solid 2px gold;
+  // align-content: space-between;
+  h4 {
+    font-size: 19px !important;
   }
-  p{
-    color: white !important;
-    font-size:  20px !important;
+  p {
+    color: black !important;
+    font-size: 16px !important;
   }
   // flex-direction: column;
 }
