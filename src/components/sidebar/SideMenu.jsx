@@ -72,7 +72,7 @@ const SideMenu = (props) => {
               onClick={() => setInactive(!inactive)}
               className="toggle-menu-btn"
             >
-              {inactive ? <Fa.FaRegWindowClose /> : <Fa.FaAlignJustify />}
+              {inactive ? <Fa.FaRegWindowClose className="toggle-menu-btn" /> : <Fa.FaAlignJustify />}
             </div>
           </div>
           <div className="main-menu">
@@ -128,7 +128,7 @@ const SideMenu = (props) => {
                   <div className="menu-icon">
                     <Bi.BiBuildingHouse />
                   </div>
-                  <span>{"Project"}</span>
+                  {"Project"}
                 </Link>
                 <ul className={`sub-menu`}>
                   <li key={"index"}>
@@ -139,7 +139,7 @@ const SideMenu = (props) => {
                       }
                     >
                       <Md.MdHouse />
-                      {"Rumah"}
+                      {" Rumah"}
                     </NavLink>
                     <NavLink
                       to={"/webarchitect/p/" + categories[1]}
@@ -148,7 +148,7 @@ const SideMenu = (props) => {
                       }
                     >
                       <Gi.GiShop />
-                      {"Ruko"}
+                      {" Ruko"}
                     </NavLink>
                     <NavLink
                       to={"/webarchitect/p/" + categories[2]}
@@ -157,7 +157,7 @@ const SideMenu = (props) => {
                       }
                     >
                       <Md.MdOutlineLocalConvenienceStore />
-                      {"Kios"}
+                      {" Kios"}
                     </NavLink>
                   </li>
                 </ul>

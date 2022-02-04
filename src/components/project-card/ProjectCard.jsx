@@ -17,7 +17,7 @@ const ProjectCard = (props) => {
             <Link to={"/webarchitect/detail/project/" + el.id}>
               <img
                 src={typeof el.url == "object" ? el.url[0] : el.url}
-                className="image-custom img-thumbnail"
+                className="image-custom"
                 alt=""
               />
               <p className="text-proyek">{el.pName}</p>

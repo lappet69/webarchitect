@@ -11,7 +11,7 @@ const Jumbotron = () => {
       <Carousel>
         <Carousel.Item interval={1000}>
           <img
-            className="d-block w-100"
+            className="d-block"
             src={heroimg}
             alt="First slide"
           />

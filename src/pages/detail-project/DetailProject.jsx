@@ -23,7 +23,7 @@ const DetailProject = (props) => {
                   <img
                     src={typeof item.url == "object" ? src : item.url}
                     alt=""
-                    className="image-custom img-thumbnail"
+                    className="image-custom"
                   />
                 </Zoom>
               </SwiperSlide>

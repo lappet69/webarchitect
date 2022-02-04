@@ -2,15 +2,16 @@
 
 .contact-us{
   
-  min-height: 100%;
+  // min-height: 100%;
   display: block;
   padding: 50px 0 0 0;
   text-align: center;
   .text-contact{
-    font-size: 30px;
+    font-size: 2rem;
   }
   .text-company{
-    font-size: 50px;
+    font-size: 2.5rem;
+    
   }
   .text-information{
     font-size: 25px;
@@ -18,16 +19,26 @@
 }
 
 .sosmed{
-  padding-top: 50px;
+  padding: 0 3rem;
+  display: flex;
+  justify-content: center;
+  svg{
+    color: #000 !important;
+    font-size: 4.5rem;
+    display: inline-block;
+  }
 }
 
 .sosmed-wa,.sosmed-email, .sosmed-ig, .sosmed-fb{
-  height: 150px;
-  border: solid 1px white;
+  // height: 150px;
+  padding: 2rem 0rem;
+  // border: solid 1px white;
 }
 
-figure{
-  padding-top:20px;
+
+.loc{
+  font-size: 2rem;
+  color: #000 ;
 }
 @-webkit-keyframes animate-loading {
   0% {

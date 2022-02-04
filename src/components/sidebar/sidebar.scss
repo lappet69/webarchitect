@@ -1,50 +1,34 @@
 @use "../../scss/" as *;
-// * {
-//   margin: 0;
-//   padding: 0;
-// }
-// ul {
-//   padding: 0;
-//   margin: 0;
-// }
-// li {
-//   list-style: none;
-// }
 
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  display: none;
+}
 
-/* width */
-// ::-webkit-scrollbar {
-//   width: 3px;
-// }
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+  display: none;
+}
 
-// /* Track */
-// ::-webkit-scrollbar-track {
-//   box-shadow: inset 0 0 5px grey;
-//   border-radius: 10px;
-//   display: none;
-// }
-
-// /* Handle */
-// ::-webkit-scrollbar-thumb {
-//   background: #333;
-//   border-radius: 10px;
-//   display: none;
-// }
-
-// /* Handle on hover */
-// ::-webkit-scrollbar-thumb:hover {
-//   background: #333;
-//   display: block;
-// }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
+  display: block;
+}
 
 .side-menu {
   display: flex;
-  text-align: center;
+  // text-align: center;
   flex-direction: column;
   justify-content: space-between;
-  // float: right;
+  align-items: center;
+
   right: 0px;
-  background-color: #1C1C1C;
+  background-color: #1c1c1c;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
@@ -52,19 +36,20 @@
   transition: width 0.2s ease-in;
   // 40em == 640px
   @media only screen and (max-width: 40em) {
-    position: relative;
+    position: absolute;
+    height: max-content;
     width: 100vw;
     // height: auto;
     padding: 0px 0px;
     z-index: 99;
     top: 0 !important;
     float: none;
-    background-color: #3D464D;
+    background-color: transparent;
   }
 }
 .side-menu.inactive {
-  width: 80px;
-  @include mobile-potrait{
+  @include mobile-potrait {
+    display: flex;
     width: 100%;
   }
 }
@@ -97,7 +82,7 @@
 .side-menu.inactive .top-section .logo {
   text-align: center;
   display: none;
-  @include mobile-potrait{
+  @include mobile-potrait {
     display: block;
   }
 }
@@ -106,7 +91,6 @@
 }
 
 .side-menu .top-section .toggle-menu-btn {
-  color: #B9BABE;
   font-size: 1.5rem;
   margin: auto;
   position: absolute;
@@ -114,8 +98,12 @@
   right: 0;
   margin-right: 20px;
   display: none;
+  z-index: 100;
   transform: translateY(-75%);
   cursor: pointer;
+  svg {
+    color: #000 !important;
+  }
   @media only screen and (max-width: 640px) {
     float: right;
     display: inline;
@@ -139,7 +127,7 @@
   background: transparent;
   border: 0;
   font-size: 20px;
-  color: #B9BABE;
+  color: #b9babe;
 }
 
 .side-menu .search-controller input[type="text"] {
@@ -157,8 +145,8 @@
 }
 
 .side-menu .main-menu .menu-item {
-  margin-left:-75px;
-  color: #B9BABE;
+  // margin-left:-75px;
+  color: #b9babe;
   padding: 0.2em;
   text-decoration: none;
   height: auto;
@@ -166,29 +154,33 @@
   display: block;
   font-weight: 600;
   cursor: pointer;
-  
+  @include mobile-potrait {
+  }
 }
-.side-menu .main-menu ul{
-  
-  @include mobile-potrait{
+.side-menu .main-menu ul {
+  @include mobile-potrait {
+    justify-content: center;
     position: relative;
-    top: 4.5rem;
+    top: 0;
     right: 0px;
-    z-index: 99;
+
+    z-index: 9;
     height: 100%;
     width: 12.5rem;
     transform: translateX(100%);
   }
 }
-.side-menu.inactive .main-menu ul{
-  background-color: #3D464D;
-  @include mobile-potrait{
+.side-menu.inactive .main-menu ul {
+  background-color: #3d464d;
+  justify-content: center;
+  padding-left: 3rem;
+  @include mobile-potrait {
+    top: 0;
     transform: translateX(0%) !important;
   }
 }
 
 .side-menu .main-menu .menu-item.active {
-  
   // background: rgb(245, 189, 7);
   // background: #B9BABE;
   border-radius: 5px;
@@ -197,9 +189,7 @@
 
 .side-menu .main-menu {
   margin: 5px 0;
-  // border: solid 1px red;
   position: relative;
-  max-height: 250px;
   overflow-y: visible;
   overflow-x: hidden;
   ul {
@@ -214,7 +204,7 @@
       transition: 0.5s ease-out;
     }
   }
-  @include mobile-potrait{
+  @include mobile-potrait {
     position: fixed;
   }
 }
@@ -228,13 +218,10 @@
     position: fixed;
     // top: 0;
     right: 0;
-    border: solid 1px red;
-   
-    
+    // border: solid 1px red;
   }
 }
 .side-menu.inactive .main-menu .sub-menu a {
-  // color: red;
   position: relative;
   z-index: 9999;
 }
@@ -246,7 +233,7 @@
   height: 40px;
   font-size: 20px;
   line-height: 40px;
-  text-align: center;
+  // text-align: center;
 }
 
 .side-menu .main-menu .menu-item span {
@@ -262,7 +249,7 @@
   width: 0;
   height: 0;
   overflow: hidden;
-  @include mobile-potrait{
+  @include mobile-potrait {
     opacity: 1;
     width: auto;
     height: auto;
@@ -270,7 +257,7 @@
 }
 .side-menu.inactive .main-menu .sub-menu a {
   margin-left: -10px;
-  @include mobile-potrait{
+  @include mobile-potrait {
     margin-left: 0px;
   }
 }
@@ -282,7 +269,7 @@
 }
 
 .side-menu .main-menu .sub-menu {
-  color: #B9BABE;
+  color: #b9babe;
   margin-left: 20px;
   border-left: 1px solid #666;
   box-sizing: border-box;
@@ -290,8 +277,9 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-in;
-  @include mobile-potrait{
+  @include mobile-potrait {
     position: relative;
+    margin-left: 0px;
     top: 0;
     right: 0;
     max-height: 0;
@@ -300,7 +288,8 @@
 
 .side-menu .main-menu .sub-menu.active {
   max-height: 200px;
-  @include mobile-potrait{
+  padding-left: 1.1rem;
+  @include mobile-potrait {
     position: relative;
     top: 0;
     height: auto;
@@ -313,7 +302,7 @@
   font-size: 15px;
   font-weight: 600;
   text-decoration: none;
-  color: #B9BABE;
+  color: #b9babe;
   box-sizing: border-box;
   padding: 5px;
 }
@@ -336,10 +325,12 @@
   position: relative;
   // bottom: 0;
   right: 0;
-  padding: 20px;
+  padding: 0.5rem 1rem 0 1rem;
   box-sizing: border-box;
   @media only screen and (max-width: 40em) {
     display: none;
+    position: fixed;
+    right: 0;
   }
 }
 
@@ -360,27 +351,27 @@
   color: #fff;
   transition: opacity 0.2s ease-in;
   @include mobile-potrait {
-    display: none;
+    // display: none;
   }
 }
 
 .side-menu.inactive .side-menu-footer {
- 
   display: flex;
   background: none;
+  width: 12.5rem;
+  bottom: 0;
+  z-index: 1;
+  height: 130px;
   // 40em == 640px
-  @include mobile-potrait{
-    display: none;
+  @include mobile-potrait {
+    // display: none;
   }
 }
 .side-menu.inactive .side-menu-footer .sosmed-info {
-  flex-direction: column;
   align-items: center;
-  // position: relative;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-bottom: 50px;
   transition: 0.2s cubic-bezier(0.05, 0.53, 0.98, 0.94) !important;
   svg {
     margin-top: 20px;
@@ -394,17 +385,14 @@
 .side-menu-footer .user-info p {
   font-size: 14px;
 }
-.copyright{
+.copyright {
   text-align: center;
   width: 100%;
-  border:solid 1px ;
   margin-top: 30px;
-  p{
-    color:#B9BABE;
+  p {
+    color: #b9babe;
   }
 }
-
-
 
 .container.inactive {
   margin-left: 80px;
@@ -461,7 +449,7 @@
     display: block;
     content: "";
     width: 100%;
-    background-color: #3D464D;
+    background-color: #3d464d;
     position: absolute;
   }
 

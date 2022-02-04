@@ -3,18 +3,19 @@
 .about-us {
   display: flex;
   justify-content: center;
-  padding: 3em 0 0 0;
+  padding: 4em 0 0 0;
 }
 
 .nav-link.active {
   background-color: transparent !important;
-  color: #fff !important;
+  color: rgba(141, 72, 72, 0.63) !important;
 }
-.nav-item,.nav-link{
+.nav-item,
+.nav-link {
   border-bottom: none;
   color: #000;
-  :hover{
-    color: #fff !important;
+  :hover {
+    color: rgba(141, 72, 72, 0.63) !important;
   }
 }
 .vision,
@@ -27,7 +28,7 @@
   justify-content: center;
   text-align: center;
   min-height: 70%;
-  color: #fff;
+  color: #000;
 }
 .vision {
   animation-name: vision;

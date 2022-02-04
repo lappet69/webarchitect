@@ -23,31 +23,36 @@
   z-index: 1;
 }
 
+.carousel {
+  position: relative;
+  height: 100vh !important;
+  
+}
 .carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  img{
+    height: 100vh;
+    
+  }
   @media only screen and(max-width:40em) {
     img {
-      position: relative;
-      z-index: 1 !important;
+      max-height: 100% !important;
+      // text-align: center;
+      object-fit: cover;
+      
     }
   }
 }
-
-.carousel-caption{
+.carousel-item {
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+}
+.carousel-caption {
   z-index: 33;
-}
-
-.carousel-inner {
-  img {
-    height: 100vh;
-    @media only screen and (max-width:40em) {
-      background-repeat: no-repeat;
-      background-position-y:  10px !important;
-      background-size: cover !important;
-      // height: 100% !important;
-      // padding:10px !important;
-
-    }
-  }
 }
 
 @keyframes fadein {

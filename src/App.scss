@@ -223,9 +223,9 @@ html {
 body {
   min-height: 100vh;
   // background: linear-gradient(53deg, #7f7f7f, #1c1c1c, #232323);
-  background-color: #B9BABE ;
-  // background-image: url('./components/assets/bg-4.jpeg');
-  // background-size: 600% 600%;
+  // background-color: #b9babe;
+  background-image: url('./components/assets/bg-all.jpg');
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -457,6 +457,8 @@ textarea {
 
 img {
   vertical-align: middle;
+  max-width: 100%;
+  
 }
 
 fieldset {
@@ -505,11 +507,10 @@ footer {
 
 @media only screen and (max-width: 40em) {
   main {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr;
-    grid-template-rows: 80px auto 80px;
+    grid-template-rows: auto 80px;
     grid-template-areas:
-      "sidebar"
       "content"
       "footer";
   }
@@ -526,7 +527,7 @@ a {
   text-decoration: none !important;
 }
 svg {
-  color: #B9BABE;
+  color: #b9babe;
 }
 h4 {
   font-size: 2em !important;
@@ -566,6 +567,10 @@ h4 {
     background-position: 50% 0%;
   }
 }
-.image-custom{
+.image-custom {
   background-color: transparent;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
 }
