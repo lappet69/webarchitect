@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { data } from "../../data/data";
-
-import { Swiper, SwiperSlide } from "swiper/react";
 import "./detailProject.scss";
 import Zoom from "react-medium-image-zoom";
 
@@ -14,21 +12,15 @@ const DetailProject = (props) => {
 
   return (
     <div className="content">
-      <div className="project-content-container">
-        <div className="project-img">
-          <Swiper grabCursor={true} spaceBetween={15} slidesPerView={"auto"}>
-            {item.url.map((x) => (
-              <SwiperSlide key={x}>
-                <Zoom media="(max-width:100vw" srcSet={x} className="zoom-img">
-                  <img
-                    src={typeof item.url == "object" ? src : item.url}
-                    alt=""
-                    className="image-custom"
-                  />
-                </Zoom>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+      <div className="row project-content-container">
+        <div className="col-md project-img">
+          <Zoom media="(max-width:100vw" srcSet={src} className="zoom-img">
+            <img
+              src={typeof item.url == "object" ? src : item.url}
+              alt=""
+              className="image-custom"
+            />
+          </Zoom>
           <div className="thumbnail">
             {typeof item.url == "object" ? (
               item.url.map((el) => (
@@ -50,7 +42,7 @@ const DetailProject = (props) => {
             )}
           </div>
         </div>
-        <div className="project-info-container">
+        <div className="col-md-6 project-info-container">
           <h2 className="h2">{item.pName}</h2>
           <div className="project-info">
             <button
@@ -58,7 +50,7 @@ const DetailProject = (props) => {
               onClick={() => setActiveIndex(0)}
               to="#"
             >
-            <h3 className="fs-5"> Project Data</h3>
+              <h3 className="fs-5"> Project Data</h3>
             </button>
             <button
               className={activeIndex === 1 ? "active" : "false"}
@@ -77,7 +69,7 @@ const DetailProject = (props) => {
                 {item.desc}
               </p>
             ) : (
-              <p
+              <div
                 className={activeIndex === 0 ? "naration-fadein" : "none"}
                 index={0}
               >
@@ -107,7 +99,7 @@ const DetailProject = (props) => {
                     <p>{item.year}</p>
                   </div>
                 </div>
-              </p>
+              </div>
             )}
           </div>
         </div>

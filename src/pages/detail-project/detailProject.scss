@@ -1,62 +1,28 @@
 @use "../../scss/" as *;
 
-.project-content {
-  background: #f9f8fd;
-  background-position: 0% 0%;
-  display: flex;
-  transform: none;
-  box-sizing: border-box;
-
-  min-height: 100%;
-
-  animation-name: fadein;
-  animation-duration: 2s;
-  @include mobile-potrait {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    height: auto;
-  }
-}
-
 .project-content-container {
-  display: grid;
-  grid-template-columns: 1.5fr 1.5fr;
+  display: flex;
   min-height: 100%;
-  grid-template-areas:
-    "imgs info"
-    "imgs  info";
   align-items: center;
-  align-content: center;
-  justify-content: center;
-  box-sizing: border-box;
+  --bs-gutter-x: 0rem !important;
   @include mobile-potrait {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
-    position: absolute;
-    top:0;
-    align-content: baseline !important ;
-    justify-content: baseline !important;
     width: 100%;
   }
 }
 
 .project-img {
-  grid-area: imgs;
   cursor: zoom-in;
-  min-height: 100%;
+  height: 20rem;
   align-items: center !important;
   img {
     border-radius: 3px;
 
     @include mobile-potrait {
-      align-items: baseline !important;
-      align-content: baseline !important;
+      position: relative;
+      top: 0;
       border-radius: 3px;
-      .swiper-slide.active {
-        width: 100%;
-        margin: 0;
-      }
     }
   }
 }
@@ -74,24 +40,15 @@
 }
 
 .project-info-container {
-  // display: flex;
-  // padding: 6rem 1rem !important;
-  align-items: center;
-  grid-area: info;
-  min-height: 100%;
-  // justify-content: center;
-  // flex-direction: column;
-  padding-left: 1em;
+  display: flex;
+  text-align: left;
+  padding: .5rem !important;
+  flex-direction: column;
+  height: 20rem;
   @include mobile-potrait {
-    border-radius: 5px;
-    padding: 10px 10px !important;
-    width: 100%;
   }
 }
 .project-info {
-  display: flex;
-  border-top: solid 0.5px #000;
-  // border-bottom: solid 0.5px #000;
   p {
     font-weight: 300;
   }
@@ -101,7 +58,7 @@
     cursor: pointer;
     padding: 10px 24px 0px 0px;
     color: #000;
-    height: 39px;
+    height: auto;
     line-height: 20px;
   }
   button.active {
@@ -151,13 +108,9 @@
 
 .box-data {
   display: grid;
-  // grid-template-columns: 1fr;
   row-gap: 9px;
   column-gap: 10px;
   margin-left: 2px;
-  // padding-top: 10px;
-  // border: solid 2px gold;
-  // align-content: space-between;
   h4 {
     font-size: 19px !important;
   }
