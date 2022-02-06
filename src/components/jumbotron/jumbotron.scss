@@ -5,8 +5,8 @@
 
   --bs-gutter-x: 0;
   height: 100vh;
-  animation-duration: 2s;
-  animation-name: fadein;
+  // animation-duration: 2s;
+  // animation-name: fadein;
   padding-left: 0 !important;
   @include mobile-potrait {
     height: 100%;
@@ -50,6 +50,7 @@
   display: none;
   float: left;
   width: 100%;
+  transition:none !important;
 }
 .carousel-caption {
   z-index: 33;

@@ -9,15 +9,14 @@ const Jumbotron = () => {
   return (
     <div className="col-md">
       <Carousel>
-        <Carousel.Item interval={1000}>
+        <Carousel.Item interval={1500}>
           <img
             className="d-block"
             src={heroimg}
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>WE PLAN AND HAVE OUTPUT THAT GIVES AN ADDED VALUE FROM EVERY OUR DESIGN DETAILS</h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -27,10 +26,7 @@ const Jumbotron = () => {
             alt="second slide"
           />
           <Carousel.Caption>
-            <h3>second slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
+            <h3>WE PROVIDE AN INNOVATIVE DESIGN WITH UNLIMITED FREEDOM OF THINKING, WITHOUT LOSSING ANY ASPECTS OF ARCHITECTURAL DESIGN</h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -40,10 +36,17 @@ const Jumbotron = () => {
             alt="Third slide"
           />
           <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
+            <h3>DESIGN THAT IS EXPECTED TO PROVIDE EXPERIENCE IN EVERY DESIGN PROCESS TO BECOME AN AESTHETIC SPACE</h3>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={heroimg3}
+            alt="fourth slide"
+          />
+          <Carousel.Caption>
+            <h3>FUNCTIONAL, CONTEXTUAL AND EXPERIMENTAL IS THE PRINCIPLES OF THE COLLABORATION PROCESS IN ALL OUR WORKS</h3>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

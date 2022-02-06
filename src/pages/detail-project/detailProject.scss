@@ -33,7 +33,10 @@
   @include mobile-potrait {
     display: flex;
     flex-direction: column;
-    // align-items: baseline;
+    position: absolute;
+    top:0;
+    align-content: baseline !important ;
+    justify-content: baseline !important;
     width: 100%;
   }
 }
@@ -47,6 +50,8 @@
     border-radius: 3px;
 
     @include mobile-potrait {
+      align-items: baseline !important;
+      align-content: baseline !important;
       border-radius: 3px;
       .swiper-slide.active {
         width: 100%;
@@ -76,7 +81,7 @@
   min-height: 100%;
   // justify-content: center;
   // flex-direction: column;
-  padding-left: 2em;
+  padding-left: 1em;
   @include mobile-potrait {
     border-radius: 5px;
     padding: 10px 10px !important;
@@ -119,11 +124,11 @@
   }
 }
 .project-detail {
-  padding: 20px 0 2px 0;
+  padding: 10px 0 0px 0 !important;
   text-align: justify;
   p {
     font-weight: 300;
-    font-size: 1.3rem;
+    font-size: 1.2rem !important;
     color: black !important;
   }
   @include mobile-potrait {
@@ -147,7 +152,7 @@
 .box-data {
   display: grid;
   // grid-template-columns: 1fr;
-  row-gap: 10.5px;
+  row-gap: 9px;
   column-gap: 10px;
   margin-left: 2px;
   // padding-top: 10px;

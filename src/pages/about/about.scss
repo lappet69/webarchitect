@@ -3,7 +3,8 @@
 .about-us {
   display: flex;
   justify-content: center;
-  padding: 4em 0 0 0;
+  // padding: 4em 0 0 0;
+  align-items: ce;
 }
 
 .nav-link.active {
@@ -24,10 +25,10 @@
   display: flex;
   flex-direction: column;
   animation-duration: 2s;
-  padding: 3em;
+  padding: 0rem 3rem;
   justify-content: center;
-  text-align: center;
-  min-height: 70%;
+  // text-align: center;
+  min-height: 65%;
   color: #000;
 }
 .vision {

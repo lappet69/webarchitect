@@ -7,6 +7,47 @@ const About = () => {
 
   return (
     <div className="content">
+      <h2 className="text-center mt-5">{activeIndex===0?'About Us':activeIndex===1? 'Vision':'Misison'}</h2>
+      <section
+        className={activeIndex === 0 ? "vision lh-base " : "none"}
+        index={0}
+      >
+        <p className="">
+          PRADINATA IS A GROUP OF HUMANS WHO LOVE CREATIVE THINGS IN CREATING
+          THE AESTHETIC OF A SPACE BASED ON THE KNOWLEDGE AND EXPERIENCE THAT
+          HAVE BEEN TAKEN AND FULLY COMMITTED. THAT MAKES US YOUNG PROFESSIONAL
+          ARCHITECTS THAT HAVE DEVELOPMENTAL IDEAS, CREATIVE, INNOVATIVE, AND
+          STRONG DETERMINATION IN THIS CREATIVE INDUSTRY.
+        </p>
+        <p>
+          ENGAGED IN THE FIELD OF PLANNING AND DESIGN THAT PROVIDE SERVICES FOR
+          ARCHITECTURAL DESIGN, INTERIOR DESIGN AND LANDSCAPE DESIGN WHICH IS
+          EXPECTED TO PROVIDE THE EXPERIENCE OF EVERY SPACE AND IMPROVE THE
+          QUALITY OF HUMAN LIFE IN EACH OF OUR ARCHITECTURAL WORKS.
+        </p>
+      </section>
+      <section
+        className={activeIndex === 1 ? "mission lh-base " : "none"}
+        index={1}
+      >
+        <p className="">
+          TOGETHER CREATE A NEW POINT OF VIEW AS A REPRESENTATION OF SPATIAL
+          INNOVATION THAT IS SERVED IN EXPERIMENTAL FORM OF FUNCTIONAL AND
+          CONTEXTUAL EFFECTIVE DESIGN. SO IN EVERY WORK WE ARE EXPECTED TO BE
+          USEFUL FOR OTHERS.
+        </p>
+      </section>
+
+      <section
+        className={activeIndex === 2 ? "value lh-base " : "none"}
+        index={2}
+      >
+        <p className="">
+          DEFINING AESTHETIC VALUE, STRENGTH VALUE, AND FUNCTIONAL VALUE OF A
+          SPACE THROUGH DESIGN. THAT BECOME A SOLUTION IN EVERY WORK OF OUR
+          WORK.
+        </p>
+      </section>
       <div className="about-us">
         <ul class="nav nav-tabs">
           <li class="nav-item">
@@ -16,7 +57,7 @@ const About = () => {
               aria-current="page"
               href="#"
             >
-              Vision
+              About Us
             </button>
           </li>
           <li class="nav-item">
@@ -25,7 +66,7 @@ const About = () => {
               onClick={() => setActiveIndex(1)}
               href="#"
             >
-              Mission
+              Vision
             </button>
           </li>
           <li class="nav-item">
@@ -34,40 +75,11 @@ const About = () => {
               onClick={() => setActiveIndex(2)}
               href="#"
             >
-              Value
+              Mission
             </button>
           </li>
         </ul>
       </div>
-
-      <section
-        className={activeIndex === 0 ? "vision lh-base " : "none"}
-        index={0}
-      >
-        <p className="fs-2 fw-bold">
-          Vision Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
-          consectetur, adipisicing elit. Laboriosam, ipsum.
-        </p>
-      </section>
-      <section
-        className={activeIndex === 1 ? "mission lh-base " : "none"}
-        index={1}
-      >
-        <p className="fs-2 fw-bold">
-          Mission Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Mollitia, quam nulla?
-        </p>
-      </section>
-
-      <section
-        className={activeIndex === 2 ? "value lh-base " : "none"}
-        index={2}
-      >
-        <p className="fs-2 fw-bold">
-          Value Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
-          numquam voluptatibus laudantium voluptates!
-        </p>
-      </section>
     </div>
   );
 };
