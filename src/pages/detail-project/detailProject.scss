@@ -14,8 +14,8 @@
 
 .project-img {
   cursor: zoom-in;
-  height: 20rem;
-  align-items: center !important;
+  height: 20em;
+  // align-items: center !important;
   img {
     border-radius: 3px;
 
@@ -42,10 +42,11 @@
 .project-info-container {
   display: flex;
   text-align: left;
-  padding: .5rem !important;
+  padding: 0 .5rem !important;
   flex-direction: column;
-  height: 20rem;
+  height: 20em;
   @include mobile-potrait {
+    padding: 5rem 0.5rem !important;
   }
 }
 .project-info {

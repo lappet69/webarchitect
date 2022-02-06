@@ -12,7 +12,7 @@ const About = () => {
         className={activeIndex === 0 ? "vision lh-base " : "none"}
         index={0}
       >
-        <p className="">
+        <p className="text-about">
           PRADINATA IS A GROUP OF HUMANS WHO LOVE CREATIVE THINGS IN CREATING
           THE AESTHETIC OF A SPACE BASED ON THE KNOWLEDGE AND EXPERIENCE THAT
           HAVE BEEN TAKEN AND FULLY COMMITTED. THAT MAKES US YOUNG PROFESSIONAL
@@ -30,7 +30,7 @@ const About = () => {
         className={activeIndex === 1 ? "mission lh-base " : "none"}
         index={1}
       >
-        <p className="">
+        <p className="text-vision">
           TOGETHER CREATE A NEW POINT OF VIEW AS A REPRESENTATION OF SPATIAL
           INNOVATION THAT IS SERVED IN EXPERIMENTAL FORM OF FUNCTIONAL AND
           CONTEXTUAL EFFECTIVE DESIGN. SO IN EVERY WORK WE ARE EXPECTED TO BE
@@ -42,7 +42,7 @@ const About = () => {
         className={activeIndex === 2 ? "value lh-base " : "none"}
         index={2}
       >
-        <p className="">
+        <p className="text-mission">
           DEFINING AESTHETIC VALUE, STRENGTH VALUE, AND FUNCTIONAL VALUE OF A
           SPACE THROUGH DESIGN. THAT BECOME A SOLUTION IN EVERY WORK OF OUR
           WORK.
