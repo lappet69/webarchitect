@@ -3,6 +3,8 @@ import React from "react";
 import "./contact.scss";
 import * as Bs from "react-icons/bs";
 import * as Go from "react-icons/go";
+export const e_mail ="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNtdgqhFrBfMFvBJmzmbnnpfsdcVKjFzPDghNTnRGwWbTbslcwtzxxTnQnRpsqbxqTWgZL";
+
 const Contact = () => {
   return (
     <div className="content">
@@ -15,19 +17,19 @@ const Contact = () => {
         <div className="row sosmed">
           <div className="col-md-6 sosmed-wa">
             <Bs.BsWhatsapp />
-            <p className="text-block my-4"> +62567829839</p>
+            <p className="text-block my-4"> <a href="https://api.whatsapp.com/send?phone=6282125597508" target="_blank"> 0821-2559-7508 </a></p>
           </div>
           <div className="col-md-6 sosmed-email">
             <Bs.BsEnvelope />
-            <p className="text-block my-4"> pradinata@architect.com</p>
+            <p className="text-block my-4"> <a href={e_mail} target="_blank "> pradinataarchitect@gmail.com</a></p>
           </div>
           <div className="col-md-6 sosmed-ig">
             <Bs.BsInstagram />
-            <p className="text-block my-4"> @pradinataarchitect</p>
+            <p className="text-block my-4"> <a  href="https://www.instagram.com/pradinata.architect/" target="_blank"> @pradinata.architect</a></p>
           </div>
           <div className="col-md-6 sosmed-fb">
             <Bs.BsFacebook />
-            <p className="text-block my-4"> Pradinata Architect</p>
+            <p className="text-block my-4"> <a href="https://www.facebook.com/Pradinata-Architect-101465768826062" target="_blank"> Pradinata Architects </a></p>
           </div>
         </div>
         <figure className="text-center">

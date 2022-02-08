@@ -218,6 +218,9 @@ html {
   height: 100% !important;
   -webkit-text-size-adjust: 100%; /* 2 */
   -ms-text-size-adjust: 100%; /* 2 */
+  @include mobile-potrait{
+    font-size: 80%;
+  }
 }
 
 body {

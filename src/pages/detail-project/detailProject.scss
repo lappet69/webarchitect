@@ -19,11 +19,9 @@
   img {
     border-radius: 3px;
 
-    @include mobile-potrait {
-      position: relative;
-      top: 0;
-      border-radius: 3px;
-    }
+  }
+  @include mobile-potrait {
+    height: 100% !important;
   }
 }
 .thumbnail {
@@ -46,7 +44,7 @@
   flex-direction: column;
   height: 20em;
   @include mobile-potrait {
-    padding: 5rem 0.5rem !important;
+    padding: 1rem 0.5rem !important;
   }
 }
 .project-info {
@@ -57,7 +55,7 @@
     border: none;
     background: transparent;
     cursor: pointer;
-    padding: 10px 24px 0px 0px;
+    padding: 10px 10px 0px 0px;
     color: #000;
     height: auto;
     line-height: 20px;
@@ -120,6 +118,9 @@
     font-size: 16px !important;
   }
   // flex-direction: column;
+}
+.text-info-project{
+  font-size: 1.2rem;
 }
 
 @keyframes fadein {

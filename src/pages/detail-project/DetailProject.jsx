@@ -50,14 +50,14 @@ const DetailProject = (props) => {
               onClick={() => setActiveIndex(0)}
               to="#"
             >
-              <h3 className="fs-5"> Project Data</h3>
+              <h3 className="text-info-project"> Project Data</h3>
             </button>
             <button
               className={activeIndex === 1 ? "active" : "false"}
               onClick={() => setActiveIndex(1)}
               to="#"
             >
-              <h3 className="fs-5">Project Info</h3>
+              <h3 className="text-info-project">Project Info</h3>
             </button>
           </div>
           <div className="project-detail">

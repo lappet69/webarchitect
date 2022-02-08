@@ -3,8 +3,10 @@
 .about-us {
   display: flex;
   justify-content: center;
-  // padding: 4em 0 0 0;
-  align-items: ce;
+  @include mobile-potrait{
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 .nav-link.active {
@@ -19,24 +21,27 @@
     color: rgba(141, 72, 72, 0.63) !important;
   }
 }
-
-section p{
-  font-size: 1rem;
-  text-align: center;
-  line-height: 1;
-  padding: 1rem 0;
+.sub-heading{
+  font-size: 1.5rem;
+}
+.sub-content{
+  @include mobile-potrait{
+    --bs-gutter-x: 0rem;
+    padding: 0.5rem;
+  }
 }
 
 .vision,
 .mission,
 .value {
   display: flex;
+  
   flex-direction: column;
   animation-duration: 2s;
-  padding: 0rem 3rem;
-  justify-content: center;
-  // text-align: center;
-  min-height: 65%;
+  padding: 1rem;
+  
+  text-align: justify;
+  min-height: 20rem;
   color: #000;
 }
 .vision {
@@ -48,6 +53,10 @@ section p{
 .value {
   animation-name: value;
 }
+.text-about, .text-vision, .text-mission{
+  font-size: 1.1rem;
+}
+
 
 @keyframes vision {
   from {

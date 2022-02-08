@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 // import logo from "../assets/logo/webscript.png";
 import logo from "../../logo.svg";
 import Footer from "../footer/Footer";
-
 import "./sidebar.scss";
 
 import * as Fa from "react-icons/fa";
@@ -16,6 +15,7 @@ import * as Gi from "react-icons/gi";
 import { Link, NavLink } from "react-router-dom";
 import { data } from "../../data/data";
 import $ from "jquery";
+import { e_mail } from "../../pages/contact/Contact";
 
 //
 
@@ -179,18 +179,18 @@ const SideMenu = (props) => {
           <div className="side-menu-footer">
             <div className="sosmed-info">
               <a
-                href={"https://www.instagram.com/scarlett.actress/"}
+                href={"https://www.instagram.com/pradinata.architect/"}
                 target="_blank"
               >
                 <Fa.FaInstagram />
               </a>
               <a
                 target={"_blank"}
-                href={"https://www.facebook.com/Scarjolivex/"}
+                href={"https://www.facebook.com/Pradinata-Architect-101465768826062"}
               >
                 <Fa.FaFacebookSquare />
               </a>
-              <a target={"_blank"} href={"https://twitter.com/scarlett_jo"}>
+              <a target={"_blank"} href={e_mail}>
                 <Bs.BsEnvelope />
               </a>
             </div>

@@ -16,7 +16,7 @@ const Jumbotron = () => {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>WE PLAN AND HAVE OUTPUT THAT GIVES AN ADDED VALUE FROM EVERY OUR DESIGN DETAILS</h3>
+            <h3 className="text-home">WE PLAN AND HAVE OUTPUT THAT GIVES AN ADDED VALUE FROM EVERY OUR DESIGN DETAILS</h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -26,7 +26,7 @@ const Jumbotron = () => {
             alt="second slide"
           />
           <Carousel.Caption>
-            <h3>WE PROVIDE AN INNOVATIVE DESIGN WITH UNLIMITED FREEDOM OF THINKING, WITHOUT LOSSING ANY ASPECTS OF ARCHITECTURAL DESIGN</h3>
+            <h3 className="text-home">WE PROVIDE AN INNOVATIVE DESIGN WITH UNLIMITED FREEDOM OF THINKING, WITHOUT LOSSING ANY ASPECTS OF ARCHITECTURAL DESIGN</h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -36,7 +36,7 @@ const Jumbotron = () => {
             alt="Third slide"
           />
           <Carousel.Caption>
-            <h3>DESIGN THAT IS EXPECTED TO PROVIDE EXPERIENCE IN EVERY DESIGN PROCESS TO BECOME AN AESTHETIC SPACE</h3>
+            <h3 className="text-home">DESIGN THAT IS EXPECTED TO PROVIDE EXPERIENCE IN EVERY DESIGN PROCESS TO BECOME AN AESTHETIC SPACE</h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -46,7 +46,7 @@ const Jumbotron = () => {
             alt="fourth slide"
           />
           <Carousel.Caption>
-            <h3>FUNCTIONAL, CONTEXTUAL AND EXPERIMENTAL IS THE PRINCIPLES OF THE COLLABORATION PROCESS IN ALL OUR WORKS</h3>
+            <h3 className="text-home">FUNCTIONAL, CONTEXTUAL AND EXPERIMENTAL IS THE PRINCIPLES OF THE COLLABORATION PROCESS IN ALL OUR WORKS</h3>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
