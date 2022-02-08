@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/webarchitect/static/css/main.eb601eed.css",
-    "main.js": "/webarchitect/static/js/main.1f82f03b.js",
+    "main.css": "/webarchitect/static/css/main.8e0a71a5.css",
+    "main.js": "/webarchitect/static/js/main.cae572db.js",
     "static/media/gb-2.jpg": "/webarchitect/static/media/gb-2.82585e7be612fd943c0c.jpg",
     "static/media/gb-1.jpg": "/webarchitect/static/media/gb-1.232c5841e9b93fac4d72.jpg",
     "static/media/gb-3.jpg": "/webarchitect/static/media/gb-3.647c76f8077c9df830fb.jpg",
@@ -10,11 +10,11 @@
     "static/media/bg-web.jpg": "/webarchitect/static/media/bg-web.e8f1e33dab0a245acbe4.jpg",
     "static/media/logo.svg": "/webarchitect/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/webarchitect/index.html",
-    "main.eb601eed.css.map": "/webarchitect/static/css/main.eb601eed.css.map",
-    "main.1f82f03b.js.map": "/webarchitect/static/js/main.1f82f03b.js.map"
+    "main.8e0a71a5.css.map": "/webarchitect/static/css/main.8e0a71a5.css.map",
+    "main.cae572db.js.map": "/webarchitect/static/js/main.cae572db.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb601eed.css",
-    "static/js/main.1f82f03b.js"
+    "static/css/main.8e0a71a5.css",
+    "static/js/main.cae572db.js"
   ]
 }
