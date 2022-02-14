@@ -506,7 +506,7 @@ footer {
   grid-area: sidebar;
 }
 
-@media only screen and (max-width: 40em) {
+@include mobile-potrait {
   main {
     display: flex;
     grid-template-columns: 1fr;

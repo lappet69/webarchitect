@@ -13,7 +13,7 @@
 }
 // and (orientation: portrait)
 @mixin mobile-potrait {
-  @media only screen and (min-device-width: 200px) and (max-device-width: 40em) and (-webkit-min-device-pixel-ratio: 2) {
+  @media only screen and (min-device-width: 200px) and (max-device-width: 40em) {
     /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
     @content;
   }

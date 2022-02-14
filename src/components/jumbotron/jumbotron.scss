@@ -36,10 +36,9 @@
     height: 100vh;
     
   }
-  @media only screen and(max-width:40em) {
+  @include mobile-potrait {
     img {
       max-height: 100% !important;
-      // text-align: center;
       object-fit: cover;
       
     }

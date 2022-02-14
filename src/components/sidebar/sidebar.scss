@@ -1,28 +1,8 @@
 @use "../../scss/" as *;
 
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
-  display: none;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #333;
-  border-radius: 10px;
-  display: none;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #333;
-  display: block;
-}
 
 .side-menu {
   display: flex;
-  // text-align: center;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -35,28 +15,27 @@
   padding: 30px 20px;
   transition: width 0.2s ease-in;
   // 40em == 640px
-  @media only screen and (max-width: 40em) {
-    position: absolute;
+  @include mobile-potrait{
+    position: absolute !important;
     height: max-content;
     width: 100vw;
-    // height: auto;
+    height: auto;
     padding: 0px 0px;
     z-index: 99;
     top: 0 !important;
-    float: none;
     background-color: transparent;
   }
 }
 .side-menu.inactive {
   @include mobile-potrait {
-    display: flex;
-    width: 100%;
+    // display: flex;
+    // width: 100%;
   }
 }
 
 .side-menu .top-section {
   position: relative;
-  @media only screen and (max-width: 40em) {
+  @include mobile-potrait {
     // position:  ;
     right: 0;
     width: 100%;
@@ -108,7 +87,7 @@
   svg {
     color: #000 !important;
   }
-  @media only screen and (max-width: 640px) {
+  @include mobile-potrait{
     float: right;
     display: inline;
   }
@@ -200,7 +179,7 @@
     // transition: 1.5s cubic-bezier(0.05, 0.53, 0.98, 0.94) !important;
     // background: #3D464D;
     list-style: none;
-    @media only screen and (max-width: 40em) {
+    @include mobile-potrait {
       position: fixed;
       margin: 0;
       display: flex;
@@ -218,7 +197,7 @@
   ul {
     transition: cubic-bezier(0.19, 0.07, 1, 0.69) 0.4s;
   }
-  @media only screen and(max-width:40em) {
+  @include mobile-potrait{
     position: fixed;
     // top: 0;
     right: 0;
@@ -331,7 +310,7 @@
   right: 0;
   padding: 0.5rem 1rem 0 1rem;
   box-sizing: border-box;
-  @media only screen and (max-width: 40em) {
+  @include mobile-potrait {
     display: none;
     position: fixed;
     right: 0;
@@ -412,7 +391,7 @@
 
   display: none;
 
-  @media only screen and (max-width: 40em) {
+  @include mobile-potrait {
     display: block;
     // z-index: 991;
     // float: right;

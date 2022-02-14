@@ -84,7 +84,7 @@
   text-align: justify;
   p {
     font-weight: 300;
-    font-size: 1.2rem !important;
+    font-size: 1.4rem !important;
     color: black !important;
   }
   @include mobile-potrait {
@@ -115,12 +115,11 @@
   }
   p {
     color: black !important;
-    font-size: 16px !important;
+    font-size: 1.1rem !important;
   }
-  // flex-direction: column;
 }
 .text-info-project{
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @keyframes fadein {
