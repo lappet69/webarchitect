@@ -1,3 +1,55 @@
+// homepages data
+const heroImg = require("../components/assets/gb-1.jpg");
+const heroImg2 = require("../components/assets/gb-2.jpg");
+const heroImg3 = require("../components/assets/gb-3.jpg");
+
+export const homeData = [
+  {
+    id: 0,
+    imgSrc: heroImg,
+    text: "WE PLAN AND HAVE OUTPUT THAT GIVES AN ADDED VALUE FROM EVERY OUR DESIGN DETAILS",
+  },
+  {
+    id: 1,
+    imgSrc: heroImg2,
+    text: "WE PROVIDE AN INNOVATIVE DESIGN WITH UNLIMITED FREEDOM OF THINKING, WITHOUT LOSSING ANY ASPECTS OF ARCHITECTURAL DESIGN",
+  },
+  {
+    id: 2,
+    imgSrc: heroImg3,
+    text: "DESIGN THAT IS EXPECTED TO PROVIDE EXPERIENCE IN EVERY DESIGN PROCESS TO BECOME AN AESTHETIC SPACE",
+  },
+  {
+    id: 3,
+    imgSrc: heroImg2,
+    text: "FUNCTIONAL, CONTEXTUAL AND EXPERIMENTAL IS THE PRINCIPLES OF THE COLLABORATION PROCESS IN ALL OUR WORKS",
+  },
+];
+
+//===================//
+
+// About pages data
+
+export const aboutData = [
+  {
+    id: 0,
+    title: "About Us",
+    text: "PRADINATA IS A GROUP OF HUMANS WHO LOVE CREATIVE THINGS IN CREATING THE AESTHETIC OF A SPACE BASED ON THE KNOWLEDGE AND EXPERIENCE THAT HAVE BEEN TAKEN AND FULLY COMMITTED. THAT MAKES US YOUNG PROFESSIONAL ARCHITECTS THAT HAVE DEVELOPMENTAL IDEAS, CREATIVE,INNOVATIVE, AND STRONG DETERMINATION IN THIS CREATIVE INDUSTRY.\n ENGAGED IN THE FIELD OF PLANNING AND DESIGN THAT PROVIDE SERVICES FOR ARCHITECTURAL DESIGN, INTERIOR DESIGN AND LANDSCAPE DESIGN WHICH  IS EXPECTED TO PROVIDE THE EXPERIENCE OF EVERY SPACE AND IMPROVE THE  QUALITY OF HUMAN LIFE IN EACH OF OUR ARCHITECTURAL WORKS.",
+  },
+  {
+    id: 1,
+    title: "Vision",
+    text: "TOGETHER CREATE A NEW POINT OF VIEW AS A REPRESENTATION OF SPATIAL INNOVATION THAT IS SERVED IN EXPERIMENTAL FORM OF FUNCTIONAL AND CONTEXTUAL EFFECTIVE DESIGN. SO IN EVERY WORK WE ARE EXPECTED TO BE USEFUL FOR OTHERS.",
+  },
+  {
+    id: 2,
+    title: "Mission",
+    text: "DEFINING AESTHETIC VALUE, STRENGTH VALUE, AND FUNCTIONAL VALUE OF A SPACE THROUGH DESIGN. THAT BECOME A SOLUTION IN EVERY WORK OF OUR WORK.",
+  },
+];
+
+//==================//
+
 export const teams = [
   {
     id: 0,
@@ -19,8 +71,9 @@ export const teams = [
   },
 ];
 
-const img1 =require('../components/assets/gb-1.jpg')
-const img2 =require('../components/assets/gb-3.jpg')
+const img1 = require("../components/assets/gb-1.jpg");
+const img2 = require("../components/assets/gb-3.jpg");
+
 export const data = [
   {
     id: 0,
