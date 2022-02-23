@@ -1,7 +1,8 @@
 // homepages data
-const heroImg = require("../components/assets/gb-1.jpg");
-const heroImg2 = require("../components/assets/gb-2.jpg");
-const heroImg3 = require("../components/assets/gb-3.jpg");
+const heroImg = require("../components/assets/home-1.jpg");
+const heroImg2 = require("../components/assets/1-HOME.jpg");
+const heroImg3 = require("../components/assets/home-3.jpg");
+const heroImg4 = require("../components/assets/home-4.jpg");
 
 export const homeData = [
   {
@@ -21,7 +22,7 @@ export const homeData = [
   },
   {
     id: 3,
-    imgSrc: heroImg2,
+    imgSrc: heroImg4,
     text: "FUNCTIONAL, CONTEXTUAL AND EXPERIMENTAL IS THE PRINCIPLES OF THE COLLABORATION PROCESS IN ALL OUR WORKS",
   },
 ];
