@@ -1,6 +1,6 @@
 // homepages data
 const heroImg = require("../components/assets/home-1.jpg");
-const heroImg2 = require("../components/assets/1-HOME.jpg");
+const heroImg2 = require("../components/assets/home-2.jpg");
 const heroImg3 = require("../components/assets/home-3.jpg");
 const heroImg4 = require("../components/assets/home-4.jpg");
 
